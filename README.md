@@ -26,15 +26,9 @@ https://thejunglewalrus.github.io/loa-on-air-2026-10-16/
 
 ## OBS
 
-`obs-landscape.html` and `obs-vertical.html` are the local-file entry points for the two browser sources. Each one redirects to `index.html` with the matching `layout` and `presenter=1`. The landscape and vertical instances stay in sync through shared browser storage, so either source's Interact window drives both.
+The two OBS browser sources load the live page with `?presenter=1&stream=1&layout=landscape` (main canvas, 2560x1440) and `?presenter=1&stream=1&layout=vertical` (Aitum vertical canvas, 1080x1920). `stream=1` reserves space for the stream overlays: in landscape the left 640 px hold the webcam (640x360) and the chat column; in vertical the top 480 px band holds the webcam. The landscape and vertical instances stay in sync through shared browser storage, so either source's Interact window drives both.
 
-After the Pages push, switch a source to the live URL from the walrus-station repo root with:
-
-```
-op run --env-file .env.op.template -- node scripts/obs-eval.mjs SetInputSettings '{"inputName":"loa-on-air-summary","inputSettings":{"is_local_file":false,"url":"https://thejunglewalrus.github.io/loa-on-air-2026-10-16/?presenter=1&layout=landscape"}}' --write
-```
-
-Do the same for the vertical source (`loa-on-air-summary-v`) with `layout=vertical`.
+`obs-landscape.html` and `obs-vertical.html` are offline fallbacks: local-file entry points that redirect to `index.html` with the same parameters. The scenes are built and reconciled by `scripts/build-loa-on-air-scene.mjs` in the walrus-station repo (`--local` switches both sources to the shims).
 
 ## Source
 

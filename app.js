@@ -286,11 +286,12 @@
 
   function overflowing(s) { return s.scrollHeight > s.clientHeight + 1; }
   function fitCheck() {
-    stages.forEach(function (s) { s.classList.remove("is-tight"); });
+    stages.forEach(function (s) { s.classList.remove("is-tight"); s.classList.remove("is-tighter"); });
     if (root.getAttribute("data-layout") === "narrow") return;
     stages.forEach(function (s) { if (overflowing(s)) s.classList.add("is-tight"); });
+    stages.forEach(function (s) { if (s.classList.contains("is-tight") && overflowing(s)) s.classList.add("is-tighter"); });
     stages.forEach(function (s) {
-      if (s.classList.contains("is-tight") && overflowing(s)) console.warn("overflow", s.id);
+      if (s.classList.contains("is-tighter") && overflowing(s)) console.warn("overflow", s.id);
     });
   }
 
@@ -348,6 +349,7 @@
 
   setTp(startTp);
   if (params.get("presenter") === "1") root.setAttribute("data-presenter", "on");
+  if (params.get("stream") === "1") root.setAttribute("data-stream", "on");
 
   scrollToStage(startStage, false);
   setActive(startStage, true);

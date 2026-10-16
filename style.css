@@ -632,3 +632,28 @@ html[data-layout="narrow"] .tp-toggle { display: none; }
   .monitor,
   .monitor__stack img { transition-duration: 0s; }
 }
+
+/* ---------- Stream mode (?stream=1, the OBS sources): space for the webcam and chat ---------- */
+/* Landscape: the left 480 design px (640 real px at 2560x1440) hold the webcam (640x360) on top and the chat column below. */
+html[data-layout="landscape"][data-stream="on"] .rail { width: 30rem; }
+html[data-layout="landscape"][data-stream="on"] .head { left: 30rem; }
+html[data-layout="landscape"][data-stream="on"] .stage {
+  padding-left: 32.5rem;
+  grid-template-columns: 53rem 26rem;
+  column-gap: 2.5rem;
+}
+html[data-layout="landscape"][data-stream="on"] .stage--nofig { grid-template-columns: 56.5rem 22.5rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--glossary { grid-template-columns: 75rem; }
+/* Vertical: the top 480 px band holds the webcam; everything starts below it. */
+html[data-layout="vertical"][data-stream="on"] .head { top: 30rem; }
+html[data-layout="vertical"][data-stream="on"] .stage { padding-top: 39rem; }
+html[data-layout="vertical"][data-stream="on"] .monitor { width: 40.5rem; }
+html[data-layout="vertical"][data-stream="on"] .is-tight .monitor { width: 32.5rem; }
+
+/* Second fit step (after is-tight still overflows): smaller body and title, smaller monitor. */
+html[data-layout="landscape"] .is-tighter .card__list li { font-size: 1.375rem; line-height: 1.38; }
+html[data-layout="landscape"] .is-tighter .card__title { font-size: 3rem; }
+html[data-layout="landscape"] .is-tighter .tp__list { font-size: 1.25rem; }
+html[data-layout="vertical"] .is-tighter .card__list li { font-size: 1.75rem; line-height: 1.36; }
+html[data-layout="vertical"] .is-tighter .card__title { font-size: 3.25rem; }
+html[data-layout="vertical"] .is-tighter .monitor { width: 27rem; }
