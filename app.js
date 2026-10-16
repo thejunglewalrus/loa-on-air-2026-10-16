@@ -19,7 +19,8 @@
   var reducedMq = window.matchMedia("(prefers-reduced-motion: reduce)");
   function dur(ms) { return reducedMq.matches ? 0 : ms; }
 
-  var syncOn = params.get("sync") !== "0";
+  var controlMode = params.get("control") === "1";
+  var syncOn = params.get("sync") !== "0" && !controlMode; /* the control view reads and writes the state itself */
   var autoOn = params.get("auto") === "1";
 
   /* ---------- Easing: cubic-bezier(.2,.7,.2,1) ---------- */
@@ -64,6 +65,7 @@
     return window.matchMedia("(orientation: portrait)").matches ? "vertical" : "landscape";
   }
   function chooseLayout() {
+    if (controlMode) return "control";
     var mode = baseLayout();
     var w = window.innerWidth, h = window.innerHeight;
     var scale = mode === "vertical"
@@ -268,6 +270,7 @@
   function setupDetection() {
     if (observer) { observer.disconnect(); observer = null; }
     window.removeEventListener("scroll", onNarrowScroll);
+    if (controlMode) return;
     if (root.getAttribute("data-layout") === "narrow") {
       window.addEventListener("scroll", onNarrowScroll, { passive: true });
       return;
@@ -287,7 +290,7 @@
   function overflowing(s) { return s.scrollHeight > s.clientHeight + 1; }
   function fitCheck() {
     stages.forEach(function (s) { s.classList.remove("is-tight"); s.classList.remove("is-tighter"); });
-    if (root.getAttribute("data-layout") === "narrow") return;
+    if (root.getAttribute("data-layout") === "narrow" || controlMode) return;
     stages.forEach(function (s) { if (overflowing(s)) s.classList.add("is-tight"); });
     stages.forEach(function (s) { if (s.classList.contains("is-tight") && overflowing(s)) s.classList.add("is-tighter"); });
     stages.forEach(function (s) {
@@ -422,6 +425,7 @@
   }
 
   document.addEventListener("keydown", function (e) {
+    if (controlMode) return;
     if (isTyping(e.target)) return;
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     var base = navTarget !== null ? navTarget : current;
@@ -461,4 +465,127 @@
       if (on) root.removeAttribute("data-presenter"); else root.setAttribute("data-presenter", "on");
     }
   });
+  /* ---------- OBS hook: obs-browser "emit_event" custom events ----------
+     obs-eval.mjs CallVendorRequest '{"vendorName":"obs-browser","requestType":"emit_event",
+       "requestData":{"event_name":"loa-control","event_data":{"op":"next"}}}' --write
+     ops: next, prev, home, end, goto (stage), tp, rasamoaNext, rasamoaPrev. Every browser source
+     receives the event; each instance applies it and the shared state keeps them identical. */
+  if (!controlMode) {
+    window.addEventListener("loa-control", function (e) {
+      var d = (e && e.detail) || {};
+      var base = navTarget !== null ? navTarget : current;
+      switch (d.op) {
+        case "next": goTo(base + 1); break;
+        case "prev": goTo(base - 1); break;
+        case "home": goTo(0); break;
+        case "end": goTo(total - 1); break;
+        case "goto": if (isIndex(d.stage, total)) goTo(d.stage); break;
+        case "tp": toggleTp(); break;
+        case "rasamoaNext": if (current === rasStage) { setRasamoa(rasIdx + 1); writeState(); } break;
+        case "rasamoaPrev": if (current === rasStage) { setRasamoa(rasIdx - 1); writeState(); } break;
+      }
+    });
+  }
+
+  /* ---------- Remote control view (?control=1): meant for an OBS custom browser dock ----------
+     The dock shares the browser sources' storage, so clicking here moves both canvases. */
+  if (controlMode) {
+    var st = parse(readRaw()) || {};
+    var ctl = {
+      stage: isIndex(st.stage, total) ? st.stage : 0,
+      tp: typeof st.tp === "boolean" ? st.tp : false,
+      tpSeq: typeof st.tpSeq === "number" ? st.tpSeq : 0,
+      rasamoa: isIndex(st.rasamoa, rasImgs.length || 1) ? st.rasamoa : 0
+    };
+    function ctlWrite() {
+      var raw = JSON.stringify({ stage: ctl.stage, tp: ctl.tp, tpSeq: ctl.tpSeq, rasamoa: ctl.rasamoa, at: Date.now() });
+      try { window.localStorage.setItem(KEY, raw); lastRaw = raw; } catch (e) { /* storage blocked */ }
+      ctlRender();
+    }
+    function ctlGo(i) { ctl.stage = Math.max(0, Math.min(total - 1, i)); ctlWrite(); }
+    function ctlTp() { ctl.tp = !ctl.tp; ctl.tpSeq += 1; ctlWrite(); }
+    function ctlRas(d) { var n = rasImgs.length || 1; ctl.rasamoa = ((ctl.rasamoa + d) % n + n) % n; ctlWrite(); }
+
+    var panel = document.createElement("section");
+    panel.className = "ctl";
+    panel.setAttribute("aria-label", "Stage control");
+    var titles = stages.map(function (s) {
+      var h = s.querySelector("h1, h2");
+      return h ? h.textContent.trim() : s.id;
+    });
+    panel.innerHTML =
+      '<div class="ctl__now"><span class="ctl__counter" id="ctl-counter"></span><a class="ctl__tc" id="ctl-tc" target="_blank" rel="noopener"></a></div>' +
+      '<div class="ctl__row">' +
+        '<button type="button" class="ctl__btn" data-op="prev">Prev</button>' +
+        '<button type="button" class="ctl__btn ctl__btn--main" data-op="next">Next</button>' +
+        '<button type="button" class="ctl__btn" data-op="home">Home</button>' +
+        '<button type="button" class="ctl__btn" data-op="end">End</button>' +
+      '</div>' +
+      '<div class="ctl__row">' +
+        '<button type="button" class="ctl__btn" data-op="tp" id="ctl-tp">Talking points</button>' +
+        '<button type="button" class="ctl__btn" data-op="rasPrev">Rasamoa &#8249;</button>' +
+        '<button type="button" class="ctl__btn" data-op="rasNext">Rasamoa &#8250;</button>' +
+      '</div>' +
+      '<ol class="ctl__list" id="ctl-list">' +
+        titles.map(function (t, i) {
+          return '<li><button type="button" class="ctl__stage" data-stage="' + i + '"><span class="ctl__num">' + pad(i + 1) + '</span>' + t.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</button></li>';
+        }).join("") +
+      '</ol>' +
+      '<p class="ctl__hint">Keys here: arrows, Home, End, T, N, B. The OBS sources follow.</p>';
+    document.body.appendChild(panel);
+
+    function ctlRender() {
+      var s = stages[ctl.stage];
+      var sec = parseInt(s.getAttribute("data-sec"), 10) || 0;
+      document.getElementById("ctl-counter").textContent = pad(ctl.stage + 1) + " / " + pad(total) + "  " + titles[ctl.stage];
+      var tc = document.getElementById("ctl-tc");
+      tc.textContent = s.getAttribute("data-tc");
+      tc.setAttribute("href", VOD + sec + "s");
+      var tpBtnC = document.getElementById("ctl-tp");
+      tpBtnC.setAttribute("aria-pressed", ctl.tp ? "true" : "false");
+      tpBtnC.classList.toggle("is-on", ctl.tp);
+      Array.prototype.forEach.call(panel.querySelectorAll(".ctl__stage"), function (b, i) {
+        b.classList.toggle("is-active", i === ctl.stage);
+        if (i === ctl.stage) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
+      });
+    }
+    panel.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      if (b.hasAttribute("data-stage")) { ctlGo(parseInt(b.getAttribute("data-stage"), 10)); return; }
+      switch (b.getAttribute("data-op")) {
+        case "prev": ctlGo(ctl.stage - 1); break;
+        case "next": ctlGo(ctl.stage + 1); break;
+        case "home": ctlGo(0); break;
+        case "end": ctlGo(total - 1); break;
+        case "tp": ctlTp(); break;
+        case "rasPrev": ctlRas(-1); break;
+        case "rasNext": ctlRas(1); break;
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (isTyping(e.target) || e.ctrlKey || e.metaKey || e.altKey) return;
+      switch (e.key) {
+        case "ArrowDown": case "ArrowRight": case "PageDown": case " ": case "Spacebar": e.preventDefault(); ctlGo(ctl.stage + 1); return;
+        case "ArrowUp": case "ArrowLeft": case "PageUp": e.preventDefault(); ctlGo(ctl.stage - 1); return;
+        case "Home": e.preventDefault(); ctlGo(0); return;
+        case "End": e.preventDefault(); ctlGo(total - 1); return;
+      }
+      var k = e.key.length === 1 ? e.key.toLowerCase() : "";
+      if (k === "t") ctlTp(); else if (k === "n") ctlRas(1); else if (k === "b") ctlRas(-1);
+    });
+    /* follow the sources too (someone may press keys in an Interact window) */
+    window.setInterval(function () {
+      var raw = readRaw();
+      if (!raw || raw === lastRaw) return;
+      lastRaw = raw;
+      var x = parse(raw); if (!x) return;
+      if (isIndex(x.stage, total)) ctl.stage = x.stage;
+      if (typeof x.tp === "boolean") ctl.tp = x.tp;
+      if (typeof x.tpSeq === "number") ctl.tpSeq = x.tpSeq;
+      if (isIndex(x.rasamoa, rasImgs.length || 1)) ctl.rasamoa = x.rasamoa;
+      ctlRender();
+    }, 250);
+    ctlRender();
+  }
 })();

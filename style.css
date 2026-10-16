@@ -657,3 +657,36 @@ html[data-layout="landscape"] .is-tighter .tp__list { font-size: 1.25rem; }
 html[data-layout="vertical"] .is-tighter .card__list li { font-size: 1.75rem; line-height: 1.36; }
 html[data-layout="vertical"] .is-tighter .card__title { font-size: 3.25rem; }
 html[data-layout="vertical"] .is-tighter .monitor { width: 27rem; }
+
+/* ---------- Remote control view (?control=1): an OBS custom browser dock ---------- */
+html[data-layout="control"] { font-size: 16px; }
+html[data-layout="control"] body { background: var(--stage-deep); }
+html[data-layout="control"] .rail,
+html[data-layout="control"] .head,
+html[data-layout="control"] .stages,
+html[data-layout="control"] .dots,
+html[data-layout="control"] .tp-toggle,
+html[data-layout="control"] .jw-back { display: none; }
+.ctl { padding: 12px 12px 16px; color: var(--on-stage); font-family: var(--font-display); }
+.ctl__now { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+.ctl__counter { font: 700 18px/1.2 var(--font-display); font-variant-numeric: tabular-nums; color: var(--card); }
+.ctl__tc { font: 700 18px/1.2 var(--font-display); font-variant-numeric: tabular-nums; color: var(--onair); text-decoration: none; white-space: nowrap; }
+.ctl__row { display: flex; gap: 8px; margin-bottom: 8px; }
+.ctl__btn {
+  flex: 1 1 0; min-height: 44px; padding: 8px 10px; cursor: pointer;
+  font: 600 16px/1.1 var(--font-display); color: var(--gold);
+  background: var(--stage); border: 1px solid rgba(200,164,92,.55); border-radius: 6px;
+}
+.ctl__btn--main { flex: 2 1 0; color: var(--stage-deep); background: var(--gold); border-color: var(--gold); font-weight: 700; font-size: 18px; }
+.ctl__btn.is-on { background: rgba(200,164,92,.25); }
+.ctl__list { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.ctl__stage {
+  display: flex; align-items: center; gap: 10px; width: 100%; min-height: 36px; padding: 6px 10px; cursor: pointer; text-align: left;
+  font: 600 15px/1.2 var(--font-display); color: var(--on-stage);
+  background: transparent; border: 1px solid transparent; border-radius: 4px;
+}
+.ctl__num { font-variant-numeric: tabular-nums; color: var(--on-stage-muted); min-width: 2ch; }
+.ctl__stage.is-active { background: var(--card); color: var(--ink); border-color: var(--gold); }
+.ctl__stage.is-active .ctl__num { color: var(--ink-muted); }
+.ctl__btn:focus-visible, .ctl__stage:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.ctl__hint { margin: 12px 0 0; font: 400 13px/1.4 var(--font-body); color: var(--on-stage-muted); }
