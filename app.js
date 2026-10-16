@@ -536,6 +536,8 @@
       '</div>' +
       '<p class="ctl__hint">Keys here: arrows, Home, End, T, N, B. The OBS sources follow. Float this dock onto another monitor and enlarge it for bigger text.</p>';
     document.body.appendChild(panel);
+    var sizeParam = parseInt(params.get("size"), 10);
+    if (sizeParam >= 12 && sizeParam <= 80) document.getElementById("ctl-prompt").style.fontSize = sizeParam + "px";
 
     function ctlRender() {
       var s = stages[ctl.stage];
