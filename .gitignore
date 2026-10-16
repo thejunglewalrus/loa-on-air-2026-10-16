@@ -7,3 +7,5 @@ reviews/shots/
 scripts/_tmp-*
 scripts/grab-frames.log
 reviews/*.err
+# art references (not published)
+design/ref/

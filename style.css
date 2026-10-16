@@ -497,7 +497,6 @@ html[data-layout="vertical"] .tp__list li {
   line-height: 1.35;
   padding-left: 2.25rem;
 }
-html[data-layout="vertical"][data-tp="on"] .stage:has(.tp) .monitor { display: none; }
 
 html[data-layout="vertical"] .dots {
   right: auto;
@@ -731,3 +730,34 @@ html[data-layout="control"] .jw-back { display: none; }
   html[data-layout="control"] .ctl__prompt { flex: 1 1 auto; }
   html[data-layout="control"] .ctl__list { flex: 0 0 300px; margin-top: 0; }
 }
+
+/* ---------- Theme: cheery jungle oasis (default; ?theme=none for the plain stage) ---------- */
+html[data-theme="jungle"] {
+  --stage: #123F3A;
+  --stage-deep: #0C2F2C;
+  --on-stage: #E6F2EC;
+  --on-stage-muted: #9FC4B9;
+  --bar: #2E6B63;
+}
+html[data-theme="jungle"] body {
+  background-color: var(--stage);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+html[data-theme="jungle"][data-layout="landscape"] body { background-image: url("assets/jungle-landscape.svg"); }
+html[data-theme="jungle"][data-layout="vertical"] body { background-image: url("assets/jungle-vertical.svg"); }
+html[data-theme="jungle"][data-layout="landscape"] .rail { background: transparent; border-right-color: rgba(244,231,207,.18); }
+html[data-theme="jungle"][data-layout="landscape"][data-stream="on"] .rail {
+  background: linear-gradient(90deg, rgba(12,47,44,0) 7.5rem, rgba(12,47,44,.92) 7.5rem); /* chat column stays plain; the waterfall keeps the first 120px */
+}
+html[data-theme="jungle"] .head { background: linear-gradient(rgba(18,63,58,.85) 60%, rgba(18,63,58,0)); }
+html[data-theme="jungle"] .tp { background: rgba(12,47,44,.72); border-color: rgba(242,198,107,.6); }
+html[data-theme="jungle"] .ctl { color: var(--on-stage); }
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="jungle"] body { background-attachment: scroll; }
+}
+
+/* Talking points are the presenter's prompts: shown only in the control dock, never on the canvases or the public page. */
+.tp, .tp-toggle { display: none !important; }

@@ -87,7 +87,6 @@ Talking points
 - He says balance has been a problem for eight years and he shares the responsibility; "we'll try harder" has worn out. [00:48:19 – 00:48:37]
 - Ark Grid made balancing harder. The build freedom it promised is not really happening. [00:48:37 – 00:49:27]
 - Whether balancing through Ark Grid even works needs a review, with a clear direction this winter. [00:49:27 – 00:49:59]
-- No balance patch before Denouement. [01:37:18 – 01:37:29]
 
 Talking points
 - Ark Grid was sold as freedom. Did it deliver for your class?

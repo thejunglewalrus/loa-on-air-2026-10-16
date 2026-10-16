@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+<defs>
+    <linearGradient id="jv-stage" x2="0" y2="1"><stop stop-color="#123F3A"/><stop offset="1" stop-color="#123E39"/></linearGradient>
+    <radialGradient id="jv-sun" cx="83%" cy="8%" r="65%"><stop stop-color="#F2C66B" stop-opacity=".004"/><stop offset="1" stop-color="#F2C66B" stop-opacity="0"/></radialGradient>
+    <linearGradient id="jv-leaf" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1F7A6B"/><stop offset=".5" stop-color="#4E9E57"/><stop offset="1" stop-color="#7FD07C"/></linearGradient>
+    <linearGradient id="jv-broad" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1F7A6B"/><stop offset="1" stop-color="#4E9E57"/></linearGradient>
+    <linearGradient id="jv-fall" x1="0" x2="1"><stop stop-color="#1F7A6B"/><stop offset=".25" stop-color="#2BB3A3"/><stop offset=".55" stop-color="#8FE0D6"/><stop offset=".72" stop-color="#F4E7CF"/><stop offset="1" stop-color="#2BB3A3"/></linearGradient>
+    <linearGradient id="jv-water" x2="0" y2="1"><stop stop-color="#1F7A6B"/><stop offset=".55" stop-color="#2BB3A3"/><stop offset="1" stop-color="#1F7A6B"/></linearGradient>
+    <linearGradient id="jv-sand" x2="0" y2="1"><stop stop-color="#F4E7CF"/><stop offset="1" stop-color="#F2C66B"/></linearGradient>
+    <linearGradient id="jv-flame" x2="0" y2="1"><stop stop-color="#F4E7CF"/><stop offset=".42" stop-color="#F2C66B"/><stop offset="1" stop-color="#F27C6A"/></linearGradient>
+    <radialGradient id="jv-coral"><stop stop-color="#F4E7CF"/><stop offset=".25" stop-color="#FF8FA3"/><stop offset="1" stop-color="#F27C6A"/></radialGradient>
+    <radialGradient id="jv-pink"><stop stop-color="#F4E7CF"/><stop offset=".28" stop-color="#F27C6A"/><stop offset="1" stop-color="#FF8FA3"/></radialGradient>
+    <clipPath id="jv-shore-clip"><rect y="1800" width="1080" height="120"/></clipPath>
+    <clipPath id="jv-right-clip"><rect x="1032" y="480" width="48" height="1920"/></clipPath>
+    <clipPath id="jv-fall-clip"><rect x="16" y="1700" width="124" height="1920"/></clipPath>
+  </defs>
+  <style>@media (prefers-reduced-motion: reduce) { .jungle-anim { display: none; } }</style>
+<g id="jv-base"><path d="M0 0H1080V1920H0Z" fill="url(#jv-stage)"/><path d="M0 0H1080V1920H0Z" fill="url(#jv-sun)"/></g>
+<!-- Header and webcam band are plain. Side foliage begins below y=480. -->
+<g clip-path="url(#jv-right-clip)">
+<g transform="translate(1056 498) scale(1 1)" opacity="1">
+<path d="M0 0 C10 74.0 -7 189.1 0 274 C-3 178.1 6 76.7 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-5.6 0.0 -13.3 17.0 -14.0 49.1 C-7.4 40.9 -2.8 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 8.0 C5.6 0.0 13.3 17.0 14.0 49.1 C7.4 40.9 2.8 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 35.1 C-5.2 27.1 -12.4 43.7 -13.0 74.4 C-6.9 66.5 -2.6 47.1 1 40.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 35.1 C5.2 27.1 12.4 43.7 13.0 74.4 C6.9 66.5 2.6 47.1 1 40.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 62.1 C-4.8 54.1 -11.4 70.4 -12.0 99.6 C-6.4 92.1 -2.4 74.1 1 67.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 62.1 C4.8 54.1 11.4 70.4 12.0 99.6 C6.4 92.1 2.4 74.1 1 67.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 89.2 C-4.4 81.2 -10.5 97.0 -11.1 124.9 C-5.9 117.7 -2.2 101.2 1 94.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 89.2 C4.4 81.2 10.5 97.0 11.1 124.9 C5.9 117.7 2.2 101.2 1 94.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 116.2 C-4.0 108.2 -9.6 123.7 -10.1 150.1 C-5.3 143.4 -2.0 128.2 1 121.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 116.2 C4.0 108.2 9.6 123.7 10.1 150.1 C5.3 143.4 2.0 128.2 1 121.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 143.3 C-3.6 135.3 -8.6 150.4 -9.1 175.4 C-4.8 169.0 -1.8 155.3 1 148.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 143.3 C3.6 135.3 8.6 150.4 9.1 175.4 C4.8 169.0 1.8 155.3 1 148.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 170.3 C-3.2 162.3 -7.7 177.0 -8.1 200.7 C-4.3 194.6 -1.6 182.3 1 175.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 170.3 C3.2 162.3 7.7 177.0 8.1 200.7 C4.3 194.6 1.6 182.3 1 175.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 197.4 C-2.9 189.4 -6.8 203.7 -7.1 225.9 C-3.8 220.2 -1.4 209.4 1 202.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 197.4 C2.9 189.4 6.8 203.7 7.1 225.9 C3.8 220.2 1.4 209.4 1 202.4Z" fill="url(#jv-leaf)"/>
+</g>
+<g transform="translate(1058 750) scale(-1 1)" opacity="0.76">
+<path d="M0 0 C10 64.8 -7 165.6 0 240 C-3 156.0 6 67.2 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-4.8 0.0 -11.4 15.9 -12.0 44.0 C-6.4 36.8 -2.4 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 8.0 C4.8 0.0 11.4 15.9 12.0 44.0 C6.4 36.8 2.4 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 31.7 C-4.5 23.7 -10.6 39.3 -11.2 66.1 C-5.9 59.2 -2.2 43.7 1 36.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 31.7 C4.5 23.7 10.6 39.3 11.2 66.1 C5.9 59.2 2.2 43.7 1 36.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 55.4 C-4.1 47.4 -9.8 62.6 -10.3 88.2 C-5.5 81.7 -2.1 67.4 1 60.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 55.4 C4.1 47.4 9.8 62.6 10.3 88.2 C5.5 81.7 2.1 67.4 1 60.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 79.1 C-3.8 71.1 -9.0 86.0 -9.5 110.4 C-5.0 104.1 -1.9 91.1 1 84.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 79.1 C3.8 71.1 9.0 86.0 9.5 110.4 C5.0 104.1 1.9 91.1 1 84.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 102.8 C-3.5 94.8 -8.2 109.3 -8.6 132.5 C-4.6 126.6 -1.7 114.8 1 107.8Z" fill="url(#jv-leaf)"/>
+<path d="M1 102.8 C3.5 94.8 8.2 109.3 8.6 132.5 C4.6 126.6 1.7 114.8 1 107.8Z" fill="url(#jv-leaf)"/>
+<path d="M1 126.5 C-3.1 118.5 -7.4 132.7 -7.8 154.6 C-4.1 149.0 -1.6 138.5 1 131.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 126.5 C3.1 118.5 7.4 132.7 7.8 154.6 C4.1 149.0 1.6 138.5 1 131.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 150.2 C-2.8 142.2 -6.6 156.0 -7.0 176.8 C-3.7 171.4 -1.4 162.2 1 155.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 150.2 C2.8 142.2 6.6 156.0 7.0 176.8 C3.7 171.4 1.4 162.2 1 155.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 173.9 C-2.4 165.9 -5.8 179.4 -6.1 198.9 C-3.2 193.9 -1.2 185.9 1 178.9Z" fill="url(#jv-leaf)"/>
+<path d="M1 173.9 C2.4 165.9 5.8 179.4 6.1 198.9 C3.2 193.9 1.2 185.9 1 178.9Z" fill="url(#jv-leaf)"/>
+</g>
+<g transform="translate(1059 995) scale(1 1)" opacity="0.43">
+<path d="M0 0 C10 49.7 -7 127.0 0 184 C-3 119.6 6 51.5 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-4.0 0.0 -9.5 14.1 -10.0 35.6 C-5.3 30.1 -2.0 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 8.0 C4.0 0.0 9.5 14.1 10.0 35.6 C5.3 30.1 2.0 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 26.2 C-3.7 18.2 -8.8 32.0 -9.3 52.6 C-4.9 47.3 -1.9 38.2 1 31.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 26.2 C3.7 18.2 8.8 32.0 9.3 52.6 C4.9 47.3 1.9 38.2 1 31.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 44.3 C-3.4 36.3 -8.2 49.9 -8.6 69.5 C-4.6 64.5 -1.7 56.3 1 49.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 44.3 C3.4 36.3 8.2 49.9 8.6 69.5 C4.6 64.5 1.7 56.3 1 49.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 62.5 C-3.2 54.5 -7.5 67.8 -7.9 86.5 C-4.2 81.7 -1.6 74.5 1 67.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 62.5 C3.2 54.5 7.5 67.8 7.9 86.5 C4.2 81.7 1.6 74.5 1 67.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 80.7 C-2.9 72.7 -6.8 85.7 -7.2 103.5 C-3.8 98.9 -1.4 92.7 1 85.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 80.7 C2.9 72.7 6.8 85.7 7.2 103.5 C3.8 98.9 1.4 92.7 1 85.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 98.9 C-2.6 90.9 -6.2 103.6 -6.5 120.4 C-3.4 116.1 -1.3 110.9 1 103.9Z" fill="url(#jv-leaf)"/>
+<path d="M1 98.9 C2.6 90.9 6.2 103.6 6.5 120.4 C3.4 116.1 1.3 110.9 1 103.9Z" fill="url(#jv-leaf)"/>
+<path d="M1 117.0 C-2.3 109.0 -5.5 121.5 -5.8 137.4 C-3.1 133.3 -1.2 129.0 1 122.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 117.0 C2.3 109.0 5.5 121.5 5.8 137.4 C3.1 133.3 1.2 129.0 1 122.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 135.2 C-2.0 127.2 -4.8 139.4 -5.1 154.3 C-2.7 150.5 -1.0 147.2 1 140.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 135.2 C2.0 127.2 4.8 139.4 5.1 154.3 C2.7 150.5 1.0 147.2 1 140.2Z" fill="url(#jv-leaf)"/>
+</g>
+<g transform="translate(1054 534) rotate(-18) scale(0.55)" fill="url(#jv-coral)">
+<path transform="rotate(0)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(72)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(144)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(216)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(288)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<circle r="3.5" fill="#F2C66B"/>
+<path d="M0 1 Q7 -3 10 -10 L12 -9 Q7 -1 1 3Z" fill="#F4E7CF"/>
+<circle cx="11" cy="-10" r="2" fill="#F2C66B"/>
+</g>
+<g transform="translate(1056 578) rotate(24) scale(0.55)" fill="url(#jv-pink)">
+<path transform="rotate(0)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(72)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(144)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(216)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(288)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<circle r="3.5" fill="#F2C66B"/>
+<path d="M0 1 Q7 -3 10 -10 L12 -9 Q7 -1 1 3Z" fill="#F4E7CF"/>
+<circle cx="11" cy="-10" r="2" fill="#F2C66B"/>
+</g>
+</g>
+<g transform="translate(28 500) scale(-1 1)" opacity="0.62">
+<path d="M0 0 C10 70.2 -7 179.4 0 260 C-3 169.0 6 72.8 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-4.4 0.0 -10.4 16.6 -11.0 47.0 C-5.8 39.2 -2.2 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 8.0 C4.4 0.0 10.4 16.6 11.0 47.0 C5.8 39.2 2.2 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 33.7 C-4.1 25.7 -9.7 41.9 -10.2 71.0 C-5.4 63.5 -2.0 45.7 1 38.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 33.7 C4.1 25.7 9.7 41.9 10.2 71.0 C5.4 63.5 2.0 45.7 1 38.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 59.4 C-3.8 51.4 -9.0 67.2 -9.5 94.9 C-5.0 87.8 -1.9 71.3 1 64.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 59.4 C3.8 51.4 9.0 67.2 9.5 94.9 C5.0 87.8 1.9 71.3 1 64.3Z" fill="url(#jv-leaf)"/>
+<path d="M1 85.0 C-3.5 77.0 -8.3 92.5 -8.7 118.9 C-4.6 112.1 -1.7 97.0 1 90.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 85.0 C3.5 77.0 8.3 92.5 8.7 118.9 C4.6 112.1 1.7 97.0 1 90.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 110.7 C-3.2 102.7 -7.5 117.8 -7.9 142.9 C-4.2 136.4 -1.6 122.7 1 115.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 110.7 C3.2 102.7 7.5 117.8 7.9 142.9 C4.2 136.4 1.6 122.7 1 115.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 136.4 C-2.9 128.4 -6.8 143.1 -7.1 166.8 C-3.8 160.8 -1.4 148.4 1 141.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 136.4 C2.9 128.4 6.8 143.1 7.1 166.8 C3.8 160.8 1.4 148.4 1 141.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 162.1 C-2.6 154.1 -6.1 168.4 -6.4 190.8 C-3.4 185.1 -1.3 174.1 1 167.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 162.1 C2.6 154.1 6.1 168.4 6.4 190.8 C3.4 185.1 1.3 174.1 1 167.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 187.7 C-2.2 179.7 -5.3 193.7 -5.6 214.8 C-3.0 209.4 -1.1 199.7 1 192.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 187.7 C2.2 179.7 5.3 193.7 5.6 214.8 C3.0 209.4 1.1 199.7 1 192.7Z" fill="url(#jv-leaf)"/>
+</g>
+<g transform="translate(26 760) scale(1 1)" opacity="0.39">
+<path d="M0 0 C10 54.3 -7 138.7 0 201 C-3 130.7 6 56.3 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-3.6 0.0 -8.5 14.6 -9.0 38.1 C-4.8 32.1 -1.8 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 8.0 C3.6 0.0 8.5 14.6 9.0 38.1 C4.8 32.1 1.8 20.0 1 13.0Z" fill="url(#jv-leaf)"/>
+<path d="M1 27.8 C-3.3 19.8 -8.0 34.2 -8.4 56.7 C-4.4 50.9 -1.7 39.8 1 32.8Z" fill="url(#jv-leaf)"/>
+<path d="M1 27.8 C3.3 19.8 8.0 34.2 8.4 56.7 C4.4 50.9 1.7 39.8 1 32.8Z" fill="url(#jv-leaf)"/>
+<path d="M1 47.7 C-3.1 39.7 -7.4 53.8 -7.7 75.2 C-4.1 69.7 -1.5 59.7 1 52.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 47.7 C3.1 39.7 7.4 53.8 7.7 75.2 C4.1 69.7 1.5 59.7 1 52.7Z" fill="url(#jv-leaf)"/>
+<path d="M1 67.5 C-2.8 59.5 -6.8 73.3 -7.1 93.7 C-3.8 88.5 -1.4 79.5 1 72.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 67.5 C2.8 59.5 6.8 73.3 7.1 93.7 C3.8 88.5 1.4 79.5 1 72.5Z" fill="url(#jv-leaf)"/>
+<path d="M1 87.4 C-2.6 79.4 -6.2 92.9 -6.5 112.3 C-3.4 107.3 -1.3 99.4 1 92.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 87.4 C2.6 79.4 6.2 92.9 6.5 112.3 C3.4 107.3 1.3 99.4 1 92.4Z" fill="url(#jv-leaf)"/>
+<path d="M1 107.2 C-2.3 99.2 -5.6 112.4 -5.8 130.8 C-3.1 126.1 -1.2 119.2 1 112.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 107.2 C2.3 99.2 5.6 112.4 5.8 130.8 C3.1 126.1 1.2 119.2 1 112.2Z" fill="url(#jv-leaf)"/>
+<path d="M1 127.1 C-2.1 119.1 -5.0 132.0 -5.2 149.3 C-2.8 144.9 -1.0 139.1 1 132.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 127.1 C2.1 119.1 5.0 132.0 5.2 149.3 C2.8 144.9 1.0 139.1 1 132.1Z" fill="url(#jv-leaf)"/>
+<path d="M1 146.9 C-1.8 138.9 -4.4 151.5 -4.6 167.9 C-2.4 163.7 -0.9 158.9 1 151.9Z" fill="url(#jv-leaf)"/>
+<path d="M1 146.9 C1.8 138.9 4.4 151.5 4.6 167.9 C2.4 163.7 0.9 158.9 1 151.9Z" fill="url(#jv-leaf)"/>
+</g>
+<!-- The only content-zone exception is the explicitly allowed x<140, y>=1700 cascade. -->
+<g clip-path="url(#jv-fall-clip)">
+    <path d="M22 1721 Q40 1696 70 1705 Q96 1700 100 1725 L95 1833 L21 1833Z" fill="#0C2F2C"/>
+    <path d="M27 1717 Q54 1705 89 1716 C81 1749.0 96 1780.2 85 1833 L30 1833 C40 1793.4 22 1749.0 27 1717Z" fill="url(#jv-fall)"/>
+    <path d="M46 1720 C38 1751.4 52 1789.8 43 1828 L49 1829 C59 1787.4 44 1749.0 52 1719Z" fill="#8FE0D6" opacity=".68"/>
+    <path d="M68 1721 C61 1753.8 79 1795.8 65 1833 L70 1833 C83 1791.0 68 1753.8 73 1721Z" fill="#F4E7CF" opacity=".32"/>
+    <path d="M21 1714 Q34 1702 55 1706 Q72 1701 94 1714 L91 1721 Q56 1715 26 1723Z" fill="#1F7A6B"/>
+    <path d="M29 1720 Q55 1714 86 1718 Q70 1724 32 1724Z" fill="#8FE0D6"/>
+    <g class="jungle-anim" opacity=".26" fill="#F4E7CF">
+      <animate attributeName="opacity" values=".14;.38;.14" dur="4.8s" repeatCount="indefinite"/>
+      <path d="M57 1727 Q49 1744.2 58 1763.4 L61 1763.4 Q54 1744.2 61 1727Z"/>
+      <path d="M54 1777.8 Q63 1804.2 53 1829 L57 1829 Q67 1804.2 58 1777.8Z"/>
+    </g>
+  </g>
+<g transform="translate(28 1725) rotate(20) scale(0.42)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(94 1722) rotate(-25) scale(0.39)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g clip-path="url(#jv-shore-clip)">
+<path d="M0 1813 Q172.8 1804 324.0 1815 T648.0 1814 T1080 1808 V1920 H0Z" fill="url(#jv-water)"/>
+<path d="M0 1905 Q183.60000000000002 1876 367.20000000000005 1900 T723.6 1896 T1080 1905 V1920 H0Z" fill="#8FE0D6" opacity=".17"/>
+<path d="M1080 1820 C982.8000000000001 1813 982.8000000000001 1884 874.8000000000001 1890 C788.4 1895 777.6 1918 648.0 1920 H1080Z" fill="url(#jv-sand)"/>
+<path d="M756.0 1915 Q831.6 1898 874.8000000000001 1896 T1004.4000000000001 1835" fill="none" stroke="#F4E7CF" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+<path d="M140.4 1832 q9.6 -3 21.6 0 t26.4 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M291.6 1849 q15.2 -3 34.2 0 t41.8 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M421.2 1825 q8.4 -3 18.9 0 t23.1 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M518.4 1862 q17.0 -3 38.2 0 t46.8 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M691.2 1836 q9.4 -3 21.2 0 t25.9 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M842.4 1823 q6.0 -3 13.5 0 t16.5 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<ellipse cx="83" cy="1838" rx="70" ry="17" fill="#2BB3A3"/>
+    <ellipse cx="70" cy="1832" rx="43" ry="9" fill="#8FE0D6" opacity=".65"/>
+    <path d="M28 1827 Q32 1818 40 1823 Q45 1811 53 1820 Q62 1811 68 1821 Q78 1815 81 1824 Q94 1822 96 1829 Q64 1838 28 1827Z" fill="#F4E7CF" opacity=".88"/>
+    <g fill="none" stroke="#F4E7CF" stroke-linecap="round">
+      <path d="M23 1841 Q49 1851 92 1843 M104 1840 Q117 1838 128 1840" stroke-width="2" opacity=".58"/>
+      <g class="jungle-anim" opacity=".28">
+        <animate attributeName="opacity" values=".16;.36;.16" dur="5.6s" repeatCount="indefinite"/>
+        <path d="M30 1820 Q18 1807 29 1798 M48 1813 Q37 1795 48 1788 M85 1820 Q102 1807 89 1796" stroke-width="2"/>
+      </g>
+    </g>
+<g transform="translate(175 1910) rotate(-54) scale(0.55)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(169 1910) rotate(12) scale(0.57)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(190 1913) rotate(66) scale(0.38)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(994 1909) rotate(-43) scale(0.68)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(999 1909) rotate(15) scale(0.75)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1010 1910) rotate(56) scale(0.43)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jv-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(875 1901) scale(0.66)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#F27C6A"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(940 1889) scale(0.54)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#FF8FA3"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(994 1880) scale(0.48)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#F27C6A"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(1037 1852)">
+    <path d="M-4 18 L4 18 L5 56 L-5 56Z" fill="#8A5A3C"/>
+    <path d="M-2 21 L0 21 L1 54 L-2 54Z" fill="#F2C66B" opacity=".4"/>
+    <path d="M-10 15 Q-15 6 -5 -3 Q-1 -7 0 -14 Q14 -3 10 8 Q8 15 3 19Z" fill="url(#jv-flame)"/>
+    <g class="jungle-anim" opacity=".6">
+      <animate attributeName="opacity" values=".4;.78;.4" dur="3.6s" repeatCount="indefinite"/>
+      <path d="M-5 13 Q-8 7 -1 -2 Q0 4 4 5 Q9 12 1 17Z" fill="#F4E7CF"/>
+    </g>
+    <path d="M-11 14 L11 14 L7 24 L-7 24Z" fill="#8A5A3C"/>
+    <path d="M-10 16 L10 16 L9 18 L-9 18Z M-8 21 L8 21 L7 23 L-7 23Z" fill="#F2C66B"/>
+    </g>
+</g>
+</svg>

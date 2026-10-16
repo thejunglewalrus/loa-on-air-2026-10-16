@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<defs>
+    <linearGradient id="jl-stage" x2="0" y2="1"><stop stop-color="#123F3A"/><stop offset="1" stop-color="#123E39"/></linearGradient>
+    <radialGradient id="jl-sun" cx="83%" cy="8%" r="65%"><stop stop-color="#F2C66B" stop-opacity=".004"/><stop offset="1" stop-color="#F2C66B" stop-opacity="0"/></radialGradient>
+    <linearGradient id="jl-leaf" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1F7A6B"/><stop offset=".5" stop-color="#4E9E57"/><stop offset="1" stop-color="#7FD07C"/></linearGradient>
+    <linearGradient id="jl-broad" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1F7A6B"/><stop offset="1" stop-color="#4E9E57"/></linearGradient>
+    <linearGradient id="jl-fall" x1="0" x2="1"><stop stop-color="#1F7A6B"/><stop offset=".25" stop-color="#2BB3A3"/><stop offset=".55" stop-color="#8FE0D6"/><stop offset=".72" stop-color="#F4E7CF"/><stop offset="1" stop-color="#2BB3A3"/></linearGradient>
+    <linearGradient id="jl-water" x2="0" y2="1"><stop stop-color="#1F7A6B"/><stop offset=".55" stop-color="#2BB3A3"/><stop offset="1" stop-color="#1F7A6B"/></linearGradient>
+    <linearGradient id="jl-sand" x2="0" y2="1"><stop stop-color="#F4E7CF"/><stop offset="1" stop-color="#F2C66B"/></linearGradient>
+    <linearGradient id="jl-flame" x2="0" y2="1"><stop stop-color="#F4E7CF"/><stop offset=".42" stop-color="#F2C66B"/><stop offset="1" stop-color="#F27C6A"/></linearGradient>
+    <radialGradient id="jl-coral"><stop stop-color="#F4E7CF"/><stop offset=".25" stop-color="#FF8FA3"/><stop offset="1" stop-color="#F27C6A"/></radialGradient>
+    <radialGradient id="jl-pink"><stop stop-color="#F4E7CF"/><stop offset=".28" stop-color="#F27C6A"/><stop offset="1" stop-color="#FF8FA3"/></radialGradient>
+    <clipPath id="jl-shore-clip"><rect y="1000" width="1920" height="80"/></clipPath>
+    <clipPath id="jl-right-clip"><rect x="1850" y="96" width="70" height="1080"/></clipPath>
+    <clipPath id="jl-fall-clip"><rect x="16" y="56" width="92" height="1080"/></clipPath>
+  </defs>
+  <style>@media (prefers-reduced-motion: reduce) { .jungle-anim { display: none; } }</style>
+<g id="jl-base"><path d="M0 0H1920V1080H0Z" fill="url(#jl-stage)"/><path d="M0 0H1920V1080H0Z" fill="url(#jl-sun)"/></g>
+<!-- All header foliage is shadow only; the content rectangle remains untouched. -->
+<g transform="translate(1878 16) scale(1 1)" opacity="0.09">
+<path d="M0 0 C10 20.2 -7 51.7 0 75 C-3 48.8 6 21.0 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-8.8 0.0 -20.9 10.5 -22.0 19.2 C-11.7 17.0 -4.4 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 8.0 C8.8 0.0 20.9 10.5 22.0 19.2 C11.7 17.0 4.4 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 15.4 C-8.2 7.4 -19.4 17.8 -20.5 26.2 C-10.8 24.0 -4.1 27.4 1 20.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 15.4 C8.2 7.4 19.4 17.8 20.5 26.2 C10.8 24.0 4.1 27.4 1 20.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 22.8 C-7.6 14.8 -18.0 25.1 -18.9 33.1 C-10.0 31.0 -3.8 34.8 1 27.8Z" fill="url(#jl-leaf)"/>
+<path d="M1 22.8 C7.6 14.8 18.0 25.1 18.9 33.1 C10.0 31.0 3.8 34.8 1 27.8Z" fill="url(#jl-leaf)"/>
+<path d="M1 30.2 C-7.0 22.2 -16.5 32.4 -17.4 40.0 C-9.2 38.0 -3.5 42.2 1 35.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 30.2 C7.0 22.2 16.5 32.4 17.4 40.0 C9.2 38.0 3.5 42.2 1 35.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 37.6 C-6.3 29.6 -15.0 39.7 -15.8 46.9 C-8.4 45.0 -3.2 49.6 1 42.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 37.6 C6.3 29.6 15.0 39.7 15.8 46.9 C8.4 45.0 3.2 49.6 1 42.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 45.0 C-5.7 37.0 -13.6 47.0 -14.3 53.8 C-7.6 52.1 -2.9 57.0 1 50.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 45.0 C5.7 37.0 13.6 47.0 14.3 53.8 C7.6 52.1 2.9 57.0 1 50.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 52.4 C-5.1 44.4 -12.1 54.3 -12.8 60.7 C-6.8 59.1 -2.6 64.4 1 57.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 52.4 C5.1 44.4 12.1 54.3 12.8 60.7 C6.8 59.1 2.6 64.4 1 57.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 59.8 C-4.5 51.8 -10.7 61.6 -11.2 67.6 C-5.9 66.1 -2.2 71.8 1 64.8Z" fill="url(#jl-leaf)"/>
+<path d="M1 59.8 C4.5 51.8 10.7 61.6 11.2 67.6 C5.9 66.1 2.2 71.8 1 64.8Z" fill="url(#jl-leaf)"/>
+</g>
+<g transform="translate(47 16) scale(-1 1)" opacity="0.95">
+<path d="M0 0 C10 27.5 -7 70.4 0 102 C-3 66.3 6 28.6 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-11.2 0.0 -26.6 11.4 -28.0 23.3 C-14.8 20.2 -5.6 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 8.0 C11.2 0.0 26.6 11.4 28.0 23.3 C14.8 20.2 5.6 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 18.1 C-10.4 10.1 -24.7 21.3 -26.0 32.7 C-13.8 29.8 -5.2 30.1 1 23.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 18.1 C10.4 10.1 24.7 21.3 26.0 32.7 C13.8 29.8 5.2 30.1 1 23.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 28.1 C-9.6 20.1 -22.9 31.2 -24.1 42.1 C-12.8 39.3 -4.8 40.1 1 33.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 28.1 C9.6 20.1 22.9 31.2 24.1 42.1 C12.8 39.3 4.8 40.1 1 33.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 38.2 C-8.8 30.2 -21.0 41.1 -22.1 51.5 C-11.7 48.9 -4.4 50.2 1 43.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 38.2 C8.8 30.2 21.0 41.1 22.1 51.5 C11.7 48.9 4.4 50.2 1 43.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 48.3 C-8.1 40.3 -19.2 51.1 -20.2 60.9 C-10.7 58.4 -4.0 60.3 1 53.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 48.3 C8.1 40.3 19.2 51.1 20.2 60.9 C10.7 58.4 4.0 60.3 1 53.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 58.4 C-7.3 50.4 -17.3 61.0 -18.2 70.3 C-9.6 67.9 -3.6 70.4 1 63.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 58.4 C7.3 50.4 17.3 61.0 18.2 70.3 C9.6 67.9 3.6 70.4 1 63.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 68.4 C-6.5 60.4 -15.4 70.9 -16.2 79.7 C-8.6 77.5 -3.2 80.4 1 73.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 68.4 C6.5 60.4 15.4 70.9 16.2 79.7 C8.6 77.5 3.2 80.4 1 73.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 78.5 C-5.7 70.5 -13.6 80.8 -14.3 89.1 C-7.6 87.0 -2.9 90.5 1 83.5Z" fill="url(#jl-leaf)"/>
+<path d="M1 78.5 C5.7 70.5 13.6 80.8 14.3 89.1 C7.6 87.0 2.9 90.5 1 83.5Z" fill="url(#jl-leaf)"/>
+</g>
+<g clip-path="url(#jl-fall-clip)">
+    <path d="M22 74 Q40 49 70 58 Q96 53 100 78 L95 1025 L21 1025Z" fill="#0C2F2C"/>
+    <path d="M27 70 Q54 58 89 69 C81 353.7 96 603.0 85 1025 L30 1025 C40 708.5 22 353.7 27 70Z" fill="url(#jl-fall)"/>
+    <path d="M46 73 C38 372.9 52 679.8 43 1020 L49 1021 C59 660.6 44 353.7 52 72Z" fill="#8FE0D6" opacity=".68"/>
+    <path d="M68 74 C61 392.1 79 727.7 65 1025 L70 1025 C83 689.4 68 392.1 73 74Z" fill="#F4E7CF" opacity=".32"/>
+    <path d="M21 67 Q34 55 55 59 Q72 54 94 67 L91 74 Q56 68 26 76Z" fill="#1F7A6B"/>
+    <path d="M29 73 Q55 67 86 71 Q70 77 32 77Z" fill="#8FE0D6"/>
+    <g class="jungle-anim" opacity=".26" fill="#F4E7CF">
+      <animate attributeName="opacity" values=".14;.38;.14" dur="4.8s" repeatCount="indefinite"/>
+      <path d="M57 80 Q49 315.3 58 468.8 L61 468.8 Q54 315.3 61 80Z"/>
+      <path d="M54 583.9 Q63 794.8 53 1021 L57 1021 Q67 794.8 58 583.9Z"/>
+    </g>
+  </g>
+<g transform="translate(26 69) rotate(20) scale(0.65)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(89 71) rotate(-35) scale(0.64)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g clip-path="url(#jl-right-clip)">
+<g transform="translate(1884 105) scale(1 1)" opacity="1">
+<path d="M0 0 C10 74.0 -7 189.1 0 274 C-3 178.1 6 76.7 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-10.4 0.0 -24.7 17.0 -26.0 49.1 C-13.8 40.9 -5.2 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 8.0 C10.4 0.0 24.7 17.0 26.0 49.1 C13.8 40.9 5.2 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 35.1 C-9.7 27.1 -23.0 43.7 -24.2 74.4 C-12.8 66.5 -4.8 47.1 1 40.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 35.1 C9.7 27.1 23.0 43.7 24.2 74.4 C12.8 66.5 4.8 47.1 1 40.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 62.1 C-8.9 54.1 -21.2 70.4 -22.4 99.6 C-11.9 92.1 -4.5 74.1 1 67.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 62.1 C8.9 54.1 21.2 70.4 22.4 99.6 C11.9 92.1 4.5 74.1 1 67.1Z" fill="url(#jl-leaf)"/>
+<path d="M1 89.2 C-8.2 81.2 -19.5 97.0 -20.5 124.9 C-10.9 117.7 -4.1 101.2 1 94.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 89.2 C8.2 81.2 19.5 97.0 20.5 124.9 C10.9 117.7 4.1 101.2 1 94.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 116.2 C-7.5 108.2 -17.8 123.7 -18.7 150.1 C-9.9 143.4 -3.7 128.2 1 121.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 116.2 C7.5 108.2 17.8 123.7 18.7 150.1 C9.9 143.4 3.7 128.2 1 121.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 143.3 C-6.8 135.3 -16.1 150.4 -16.9 175.4 C-9.0 169.0 -3.4 155.3 1 148.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 143.3 C6.8 135.3 16.1 150.4 16.9 175.4 C9.0 169.0 3.4 155.3 1 148.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 170.3 C-6.0 162.3 -14.3 177.0 -15.1 200.7 C-8.0 194.6 -3.0 182.3 1 175.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 170.3 C6.0 162.3 14.3 177.0 15.1 200.7 C8.0 194.6 3.0 182.3 1 175.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 197.4 C-5.3 189.4 -12.6 203.7 -13.3 225.9 C-7.0 220.2 -2.7 209.4 1 202.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 197.4 C5.3 189.4 12.6 203.7 13.3 225.9 C7.0 220.2 2.7 209.4 1 202.4Z" fill="url(#jl-leaf)"/>
+</g>
+<g transform="translate(1894 310) scale(-1 1)" opacity="0.75">
+<path d="M0 0 C10 56.7 -7 144.9 0 210 C-3 136.5 6 58.8 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-7.6 0.0 -18.1 14.9 -19.0 39.5 C-10.1 33.2 -3.8 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 8.0 C7.6 0.0 18.1 14.9 19.0 39.5 C10.1 33.2 3.8 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 28.7 C-7.1 20.7 -16.8 35.4 -17.7 58.9 C-9.4 52.8 -3.5 40.7 1 33.7Z" fill="url(#jl-leaf)"/>
+<path d="M1 28.7 C7.1 20.7 16.8 35.4 17.7 58.9 C9.4 52.8 3.5 40.7 1 33.7Z" fill="url(#jl-leaf)"/>
+<path d="M1 49.5 C-6.5 41.5 -15.5 55.8 -16.3 78.2 C-8.7 72.5 -3.3 61.5 1 54.5Z" fill="url(#jl-leaf)"/>
+<path d="M1 49.5 C6.5 41.5 15.5 55.8 16.3 78.2 C8.7 72.5 3.3 61.5 1 54.5Z" fill="url(#jl-leaf)"/>
+<path d="M1 70.2 C-6.0 62.2 -14.3 76.2 -15.0 97.6 C-8.0 92.1 -3.0 82.2 1 75.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 70.2 C6.0 62.2 14.3 76.2 15.0 97.6 C8.0 92.1 3.0 82.2 1 75.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 91.0 C-5.5 83.0 -13.0 96.7 -13.7 116.9 C-7.3 111.7 -2.7 103.0 1 96.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 91.0 C5.5 83.0 13.0 96.7 13.7 116.9 C7.3 111.7 2.7 103.0 1 96.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 111.7 C-4.9 103.7 -11.7 117.1 -12.3 136.3 C-6.5 131.4 -2.5 123.7 1 116.7Z" fill="url(#jl-leaf)"/>
+<path d="M1 111.7 C4.9 103.7 11.7 117.1 12.3 136.3 C6.5 131.4 2.5 123.7 1 116.7Z" fill="url(#jl-leaf)"/>
+<path d="M1 132.4 C-4.4 124.4 -10.5 137.5 -11.0 155.7 C-5.8 151.0 -2.2 144.4 1 137.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 132.4 C4.4 124.4 10.5 137.5 11.0 155.7 C5.8 151.0 2.2 144.4 1 137.4Z" fill="url(#jl-leaf)"/>
+<path d="M1 153.2 C-3.9 145.2 -9.2 158.0 -9.7 175.0 C-5.1 170.6 -1.9 165.2 1 158.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 153.2 C3.9 145.2 9.2 158.0 9.7 175.0 C5.1 170.6 1.9 165.2 1 158.2Z" fill="url(#jl-leaf)"/>
+</g>
+<g transform="translate(1897 530) scale(1 1)" opacity="0.48">
+<path d="M0 0 C10 39.2 -7 100.0 0 145 C-3 94.2 6 40.6 -2 0Z" fill="#4E9E57"/>
+<path d="M1 8.0 C-6.4 0.0 -15.2 12.8 -16.0 29.8 C-8.5 25.4 -3.2 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 8.0 C6.4 0.0 15.2 12.8 16.0 29.8 C8.5 25.4 3.2 20.0 1 13.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 22.3 C-6.0 14.3 -14.1 26.9 -14.9 43.1 C-7.9 39.0 -3.0 34.3 1 27.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 22.3 C6.0 14.3 14.1 26.9 14.9 43.1 C7.9 39.0 3.0 34.3 1 27.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 36.6 C-5.5 28.6 -13.1 41.0 -13.8 56.5 C-7.3 52.5 -2.8 48.6 1 41.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 36.6 C5.5 28.6 13.1 41.0 13.8 56.5 C7.3 52.5 2.8 48.6 1 41.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 51.0 C-5.1 43.0 -12.0 55.1 -12.6 69.9 C-6.7 66.1 -2.5 63.0 1 56.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 51.0 C5.1 43.0 12.0 55.1 12.6 69.9 C6.7 66.1 2.5 63.0 1 56.0Z" fill="url(#jl-leaf)"/>
+<path d="M1 65.3 C-4.6 57.3 -10.9 69.2 -11.5 83.2 C-6.1 79.6 -2.3 77.3 1 70.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 65.3 C4.6 57.3 10.9 69.2 11.5 83.2 C6.1 79.6 2.3 77.3 1 70.3Z" fill="url(#jl-leaf)"/>
+<path d="M1 79.6 C-4.2 71.6 -9.9 83.3 -10.4 96.6 C-5.5 93.2 -2.1 91.6 1 84.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 79.6 C4.2 71.6 9.9 83.3 10.4 96.6 C5.5 93.2 2.1 91.6 1 84.6Z" fill="url(#jl-leaf)"/>
+<path d="M1 93.9 C-3.7 85.9 -8.8 97.4 -9.3 110.0 C-4.9 106.7 -1.9 105.9 1 98.9Z" fill="url(#jl-leaf)"/>
+<path d="M1 93.9 C3.7 85.9 8.8 97.4 9.3 110.0 C4.9 106.7 1.9 105.9 1 98.9Z" fill="url(#jl-leaf)"/>
+<path d="M1 108.2 C-3.3 100.2 -7.8 111.6 -8.2 123.3 C-4.3 120.3 -1.6 120.2 1 113.2Z" fill="url(#jl-leaf)"/>
+<path d="M1 108.2 C3.3 100.2 7.8 111.6 8.2 123.3 C4.3 120.3 1.6 120.2 1 113.2Z" fill="url(#jl-leaf)"/>
+</g>
+<g transform="translate(1884 125) rotate(-21) scale(0.73)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1894 178) rotate(22) scale(0.61)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1873 133) rotate(-18) scale(0.8)" fill="url(#jl-coral)">
+<path transform="rotate(0)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(72)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(144)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(216)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(288)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<circle r="3.5" fill="#F2C66B"/>
+<path d="M0 1 Q7 -3 10 -10 L12 -9 Q7 -1 1 3Z" fill="#F4E7CF"/>
+<circle cx="11" cy="-10" r="2" fill="#F2C66B"/>
+</g>
+<g transform="translate(1890 180) rotate(24) scale(0.7)" fill="url(#jl-pink)">
+<path transform="rotate(0)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(72)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(144)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(216)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<path transform="rotate(288)" d="M0 3 C-8 -1 -18 -10 -12 -17 C-9 -22 -3 -20 0 -17 C4 -21 10 -20 13 -16 C17 -8 8 -1 0 3Z"/>
+<circle r="3.5" fill="#F2C66B"/>
+<path d="M0 1 Q7 -3 10 -10 L12 -9 Q7 -1 1 3Z" fill="#F4E7CF"/>
+<circle cx="11" cy="-10" r="2" fill="#F2C66B"/>
+</g>
+</g>
+<g clip-path="url(#jl-shore-clip)">
+<path d="M0 1013 Q307.2 1004 576.0 1015 T1152.0 1014 T1920 1008 V1080 H0Z" fill="url(#jl-water)"/>
+<path d="M0 1065 Q326.40000000000003 1036 652.8000000000001 1060 T1286.4 1056 T1920 1065 V1080 H0Z" fill="#8FE0D6" opacity=".17"/>
+<path d="M1920 1020 C1747.2 1013 1747.2 1044 1555.2 1050 C1401.6 1055 1382.3999999999999 1078 1152.0 1080 H1920Z" fill="url(#jl-sand)"/>
+<path d="M1344.0 1075 Q1478.4 1058 1555.2 1056 T1785.6000000000001 1035" fill="none" stroke="#F4E7CF" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+<path d="M249.6 1032 q9.6 -3 21.6 0 t26.4 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M518.4 1049 q15.2 -3 34.2 0 t41.8 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M748.8 1025 q8.4 -3 18.9 0 t23.1 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M921.6 1062 q17.0 -3 38.2 0 t46.8 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M1228.8 1036 q9.4 -3 21.2 0 t25.9 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<path d="M1497.6 1023 q6.0 -3 13.5 0 t16.5 0" fill="none" stroke="#F4E7CF" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+<ellipse cx="83" cy="1038" rx="70" ry="17" fill="#2BB3A3"/>
+    <ellipse cx="70" cy="1032" rx="43" ry="9" fill="#8FE0D6" opacity=".65"/>
+    <path d="M28 1027 Q32 1018 40 1023 Q45 1011 53 1020 Q62 1011 68 1021 Q78 1015 81 1024 Q94 1022 96 1029 Q64 1038 28 1027Z" fill="#F4E7CF" opacity=".88"/>
+    <g fill="none" stroke="#F4E7CF" stroke-linecap="round">
+      <path d="M23 1041 Q49 1051 92 1043 M104 1040 Q117 1038 128 1040" stroke-width="2" opacity=".58"/>
+      <g class="jungle-anim" opacity=".28">
+        <animate attributeName="opacity" values=".16;.36;.16" dur="5.6s" repeatCount="indefinite"/>
+        <path d="M30 1020 Q18 1007 29 998 M48 1013 Q37 995 48 988 M85 1020 Q102 1007 89 996" stroke-width="2"/>
+      </g>
+    </g>
+<g transform="translate(175 1070) rotate(-54) scale(0.55)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(169 1070) rotate(12) scale(0.57)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(190 1073) rotate(66) scale(0.38)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1834 1069) rotate(-43) scale(0.68)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1839 1069) rotate(15) scale(0.75)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1850 1070) rotate(56) scale(0.43)">
+    <path d="M0 0 C-25 -5 -33 -35 -17 -57 C8 -54 23 -21 0 0Z" fill="url(#jl-broad)"/>
+    <path d="M0 0 Q-13 -31 -17 -57 Q-7 -27 0 0Z" fill="#7FD07C" opacity=".48"/>
+  </g>
+<g transform="translate(1555 1061) scale(0.66)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#F27C6A"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(1670 1049) scale(0.54)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#FF8FA3"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(1766 1040) scale(0.48)">
+    <path d="M-12 3 C-18 -4 -12 -12 -7 -10 C-7 -16 1 -17 4 -11 C10 -14 16 -7 12 -2 L3 7 Q-3 8 -12 3Z" fill="#F27C6A"/>
+    <path d="M-8 -8 Q-3 -1 0 5 L-1 -8 L2 5 L7 -8 L4 6Z" fill="#F4E7CF" opacity=".68"/>
+    </g>
+<g transform="translate(1877 1017)">
+    <path d="M-4 18 L4 18 L5 56 L-5 56Z" fill="#8A5A3C"/>
+    <path d="M-2 21 L0 21 L1 54 L-2 54Z" fill="#F2C66B" opacity=".4"/>
+    <path d="M-10 15 Q-15 6 -5 -3 Q-1 -7 0 -14 Q14 -3 10 8 Q8 15 3 19Z" fill="url(#jl-flame)"/>
+    <g class="jungle-anim" opacity=".6">
+      <animate attributeName="opacity" values=".4;.78;.4" dur="3.6s" repeatCount="indefinite"/>
+      <path d="M-5 13 Q-8 7 -1 -2 Q0 4 4 5 Q9 12 1 17Z" fill="#F4E7CF"/>
+    </g>
+    <path d="M-11 14 L11 14 L7 24 L-7 24Z" fill="#8A5A3C"/>
+    <path d="M-10 16 L10 16 L9 18 L-9 18Z M-8 21 L8 21 L7 23 L-7 23Z" fill="#F2C66B"/>
+    </g>
+</g>
+</svg>

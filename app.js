@@ -353,6 +353,7 @@
   setTp(startTp);
   if (params.get("presenter") === "1") root.setAttribute("data-presenter", "on");
   if (params.get("stream") === "1") root.setAttribute("data-stream", "on");
+  if (params.get("theme") !== "none" && !controlMode) root.setAttribute("data-theme", "jungle"); /* jungle oasis is the default look; ?theme=none for the plain stage */
 
   scrollToStage(startStage, false);
   setActive(startStage, true);
@@ -455,7 +456,7 @@
     }
     var k = e.key.length === 1 ? e.key.toLowerCase() : "";
     if (k === "t") {
-      toggleTp();
+      /* talking points are dock-only now; T is inert */
     } else if (k === "n" || k === "b") {
       if (current !== rasStage) return;
       setRasamoa(rasIdx + (k === "n" ? 1 : -1));
@@ -522,7 +523,6 @@
         '<button type="button" class="ctl__btn" data-op="end">End</button>' +
       '</div>' +
       '<div class="ctl__row">' +
-        '<button type="button" class="ctl__btn" data-op="tp" id="ctl-tp">Talking points</button>' +
         '<button type="button" class="ctl__btn" data-op="rasPrev">Rasamoa &#8249;</button>' +
         '<button type="button" class="ctl__btn" data-op="rasNext">Rasamoa &#8250;</button>' +
       '</div>' +
@@ -554,9 +554,6 @@
       if (tp) html += '<aside class="ctl__tp">' + tp.innerHTML + "</aside>";
       if (ctl.stage === rasStage && rasImgs.length) html += '<p class="ctl__ras">Rasamoa image ' + (ctl.rasamoa + 1) + " / " + rasImgs.length + ": " + (rasImgs[ctl.rasamoa].getAttribute("data-caption") || "") + "</p>";
       document.getElementById("ctl-prompt").innerHTML = html;
-      var tpBtnC = document.getElementById("ctl-tp");
-      tpBtnC.setAttribute("aria-pressed", ctl.tp ? "true" : "false");
-      tpBtnC.classList.toggle("is-on", ctl.tp);
       Array.prototype.forEach.call(panel.querySelectorAll(".ctl__stage"), function (b, i) {
         b.classList.toggle("is-active", i === ctl.stage);
         if (i === ctl.stage) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
@@ -585,7 +582,7 @@
         case "End": e.preventDefault(); ctlGo(total - 1); return;
       }
       var k = e.key.length === 1 ? e.key.toLowerCase() : "";
-      if (k === "t") ctlTp(); else if (k === "n") ctlRas(1); else if (k === "b") ctlRas(-1);
+      if (k === "n") ctlRas(1); else if (k === "b") ctlRas(-1);
     });
     /* follow the sources too (someone may press keys in an Interact window) */
     window.setInterval(function () {
