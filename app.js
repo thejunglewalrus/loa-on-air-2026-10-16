@@ -353,6 +353,19 @@
   setTp(startTp);
   if (params.get("presenter") === "1") root.setAttribute("data-presenter", "on");
   if (params.get("stream") === "1") root.setAttribute("data-stream", "on");
+  /* Stream mode is graphics-first: a stage's frame or stat tile is the main event, the card is a guidepost.
+     Stat tiles move out of the card into the graphic slot so CSS can size them like a monitor. */
+  if (root.getAttribute("data-stream") === "on" && !controlMode) {
+    stages.forEach(function (s) {
+      var stat = s.querySelector(".card .stat");
+      var side = s.querySelector(".side");
+      if (stat) {
+        if (!side) { side = document.createElement("div"); side.className = "side"; s.appendChild(side); }
+        side.insertBefore(stat, side.firstChild);
+      }
+      if (s.querySelector(".side .monitor, .side .stat")) s.classList.add("stage--gfx");
+    });
+  }
   if (params.get("theme") !== "none" && !controlMode) root.setAttribute("data-theme", "jungle"); /* jungle oasis is the default look; ?theme=none for the plain stage */
 
   scrollToStage(startStage, false);

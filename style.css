@@ -761,3 +761,68 @@ html[data-theme="jungle"] .ctl { color: var(--on-stage); }
 
 /* Talking points are the presenter's prompts: shown only in the control dock, never on the canvases or the public page. */
 .tp, .tp-toggle { display: none !important; }
+
+/* ---------- Stream mode, graphics-first: frames and stat tiles large, text as guideposts ---------- */
+/* Landscape: content area 1304 wide (x 520-1824). Graphic 1100 wide centred on top, card strip below in three columns. */
+html[data-layout="landscape"][data-stream="on"] .stage--gfx {
+  grid-template-columns: 81.5rem;
+  grid-template-rows: auto auto;
+  row-gap: 1.5rem;
+  align-content: start;
+}
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .side .stat text { font-size: 28px; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .side .stat text { font-size: 32px; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .side { order: -1; width: 100%; align-items: center; gap: 0; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .monitor { width: 68.75rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .monitor__cap { font-size: 1.375rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .monitor__cap a { font-size: 1.375rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .side .stat {
+  width: 68.75rem; margin: 0; padding: 1.5rem 2.25rem 1.75rem;
+  background: var(--card); color: var(--ink); border-radius: 6px; box-shadow: 0 .5rem 2rem rgba(0,0,0,.35);
+}
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .side .stat figcaption,
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .side .stat__note { font-size: 1.625rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card { width: 100%; padding: 1.25rem 2rem 1.5rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card__title { font-size: 2.25rem; margin-bottom: .6rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card__list { column-count: 3; column-gap: 2rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card__list li { font-size: 1.25rem; line-height: 1.4; padding-left: 1.25rem; break-inside: avoid; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card__list li::before { width: .4rem; height: .4rem; left: .1rem; top: .55em; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .card__list li + li { margin-top: .55rem; }
+/* title stage: hero large, title card compact */
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .title__kicker { font-size: 1rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .title__name { font-size: 3.5rem; margin: .4rem 0 .1rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .title__sub { font-size: 1.75rem; margin-bottom: .6rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx .title__stand { font-size: 1.125rem; max-width: 60ch; }
+/* no-graphic stages: centred guidepost card */
+html[data-layout="landscape"][data-stream="on"] .stage--nofig:not(.stage--gfx) { grid-template-columns: 62.5rem; justify-content: center; }
+html[data-layout="landscape"][data-stream="on"] .stage--nofig:not(.stage--gfx) .card__list li { font-size: 1.5rem; }
+/* fit steps for the graphic stages */
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tight .monitor,
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tight .side .stat { width: 56rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tight .card__list li { font-size: 1.125rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tighter .monitor,
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tighter .side .stat { width: 46rem; }
+html[data-layout="landscape"][data-stream="on"] .stage--gfx.is-tighter .card__list li { font-size: 1rem; }
+
+/* Vertical: graphic full width (984) on top, card below. */
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .side { order: -1; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .monitor { width: 100%; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .side .stat {
+  width: 100%; margin: 0; padding: 1.5rem 2rem 1.75rem;
+  background: var(--card); color: var(--ink); border-radius: 6px; box-shadow: 0 .5rem 2rem rgba(0,0,0,.35);
+}
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .side .stat figcaption,
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .side .stat__note { font-size: 1.75rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .card__title { font-size: 2.75rem; margin-bottom: .75rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .card__list li { font-size: 1.625rem; line-height: 1.4; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .card__list li + li { margin-top: .75rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .title__name { font-size: 5rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .title__sub { font-size: 2.5rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx .title__stand { font-size: 1.75rem; }
+html[data-layout="vertical"][data-stream="on"] .stage:not(.stage--gfx) .card__list li { font-size: 2rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tight .monitor,
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tight .side .stat { width: 82%; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tight .card__list li { font-size: 1.5rem; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tighter .monitor,
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tighter .side .stat { width: 68%; }
+html[data-layout="vertical"][data-stream="on"] .stage--gfx.is-tighter .card__list li { font-size: 1.375rem; }
