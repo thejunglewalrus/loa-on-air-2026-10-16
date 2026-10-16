@@ -145,27 +145,27 @@ Talking points
 - He fears speaking live. What would make you trust him on camera again?
 - Would new leadership fix the direction or just reset the clock?
 
-## S12 — Nice-dan: same-class rosters (1) (01:09:36)
+## S12 — Same-class rosters (1) (01:09:36)
 
 No frame (his slide is the same four numbers; the stat tile is more legible). Stat tile, values from his chart shown at 01:10:14: summer 2023 2.1%, summer 2024 6.0%, summer 2025 16.0%, summer 2026 17.8%.
 
-- In his era, the nice-dan share was around 1%: people who genuinely wanted several of the same class. Summer 2024 (Season 3 start): about 6%, triple. Now: 17.8%. [01:10:05 – 01:11:14]
+- In his era, the same-class-roster share was around 1%: people who genuinely wanted several of the same class. Summer 2024 (Season 3 start): about 6%, triple. Now: 17.8%. [01:10:05 – 01:11:14]
 - He should have acted when it climbed 2.1 → 6 → 10% (his words; his chart shows 16.0% by summer 2025); that was the window. [01:11:17 – 01:12:11]
 - Root cause: gem cost (skill gems, not Ark Grid Astrogems). Season 3's new systems demanded gold, early prices were high, and the burden never eased. [01:12:12 – 01:13:10]
 
 Talking points
-- 17.8% nice-dan: a player problem or a gem-price problem?
+- 17.8% same-class rosters: a player problem or a gem-price problem?
 - The window to act was 2024. What should have happened then?
 
-## S13 — Nice-dan: what changes (2) (01:13:16)
+## S13 — Same-class rosters: what changes (2) (01:13:16)
 
 - An RPG that pushes you to play the same character many times is odd. They do not want to encourage it. [01:13:16 – 01:14:16]
 - The company never stated a position, so punishing 17.8% now would be unfair. Winter: a clear stance, then changes. [01:14:19 – 01:15:08]
-- No hard reset or "eradication". Flexible changes, mainly to gems, protect value and stop rewarding nice-dan from winter on. [01:15:14 – 01:16:56]
+- No hard reset or "eradication". Flexible changes, mainly to gems, protect value and stop rewarding same-class rosters from winter on. [01:15:14 – 01:16:56]
 
 Talking points
 - "Stop rewarding it going forward" vs "roll it back": which would you accept?
-- If you run a nice-dan roster, what would make you diversify?
+- If you run a same-class roster, what would make you diversify?
 
 ## S14 — The economy (1): gold value (01:17:00)
 
