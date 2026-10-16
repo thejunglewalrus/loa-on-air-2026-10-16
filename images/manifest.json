@@ -1,0 +1,92 @@
+[
+  {
+    "stage": "s0",
+    "file": "images/hero.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:30:15",
+    "seconds": 1815,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, grey jacket over a white T-shirt, plain white backdrop."
+  },
+  {
+    "stage": "s2",
+    "file": "images/dps-gap.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "00:36:50",
+    "seconds": 2210,
+    "caption": "His slide: max–min DPS spread by raid gate",
+    "alt": "Bar chart titled in Korean 'max-min DPS spread by raid gate'. Three tall orange bars for Act 3 gates 1 to 3, then shorter yellow bars for Act 4, green for Denouement and Serca, and the shortest blue bars for Belgardin. No axis numbers are shown."
+  },
+  {
+    "stage": "s14",
+    "file": "images/gold-value.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:17:53",
+    "seconds": 4673,
+    "caption": "His slide: value per 10,000 gold on the currency exchange, July 2024 to September 2026",
+    "alt": "Line chart of the value of 10,000 gold on the currency exchange from 2024-07-10 to 2026-09-16, falling in steps from a peak circled and labelled 'after Act 2 release' down to the right edge. No y-axis numbers are shown."
+  },
+  {
+    "stage": "s15",
+    "file": "images/population.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:24:15",
+    "seconds": 5055,
+    "caption": "His slide: horizontal-content users, raid users (blue) vs non-raid users (orange), winter 2023 to summer 2026",
+    "alt": "Line chart titled in Korean 'change in horizontal-content users'. Legend: blue = raid users, orange = non-raid users. Six ticks from winter 2023 to summer 2026. Both lines fall; the orange non-raid line falls faster and ends lowest. No axis numbers are shown."
+  },
+  {
+    "stage": "s16",
+    "file": "images/rasamoa-1.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:29:47",
+    "seconds": 5387,
+    "caption": "Rasamoa, exterior: the domed citadel",
+    "alt": "Concept screenshot of Rasamoa: a vast domed citadel with golden spires under a blue sky with clouds."
+  },
+  {
+    "stage": "s16",
+    "file": "images/rasamoa-2.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:30:11",
+    "seconds": 5411,
+    "caption": "Rasamoa, exterior: the market quarter",
+    "alt": "Screenshot of a Rasamoa market quarter with awnings, hanging flags and trees in front of the citadel walls."
+  },
+  {
+    "stage": "s16",
+    "file": "images/rasamoa-3.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:30:23",
+    "seconds": 5423,
+    "caption": "Rasamoa, exterior: town from above",
+    "alt": "Screenshot looking down on a Rasamoa town square with stairs, stalls and tiled roofs."
+  },
+  {
+    "stage": "s16",
+    "file": "images/rasamoa-4.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:30:29",
+    "seconds": 5429,
+    "caption": "Rasamoa, interior: the great hall",
+    "alt": "Screenshot of a circular great hall interior with a glowing floor emblem, tall columns and balconies."
+  },
+  {
+    "stage": "s16",
+    "file": "images/rasamoa-5.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "01:30:47",
+    "seconds": 5447,
+    "caption": "Rasamoa, interior: a lamplit chamber",
+    "alt": "Screenshot of a warm lamplit interior chamber with a central mechanism and an upper gallery."
+  }
+]

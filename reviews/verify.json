@@ -1,0 +1,175 @@
+{
+ "overflow": [],
+ "side_bottom": {
+  "land": {
+   "s0": 502,
+   "s1": 332,
+   "s2": 716,
+   "s3": 332,
+   "s4": 332,
+   "s5": 332,
+   "s6": 332,
+   "s7": 366,
+   "s8": 332,
+   "s9": 332,
+   "s10": 332,
+   "s11": 332,
+   "s12": 332,
+   "s13": 332,
+   "s14": 773,
+   "s15": 773,
+   "s16": 716,
+   "s17": 366,
+   "s18": 332,
+   "s19": 332,
+   "s20": null,
+   "s21": null
+  },
+  "vert": {
+   "s0": 1390,
+   "s1": null,
+   "s2": 1684,
+   "s3": null,
+   "s4": null,
+   "s5": null,
+   "s6": null,
+   "s7": null,
+   "s8": null,
+   "s9": null,
+   "s10": null,
+   "s11": null,
+   "s12": null,
+   "s13": null,
+   "s14": 1416,
+   "s15": 1759,
+   "s16": 1466,
+   "s17": null,
+   "s18": null,
+   "s19": null,
+   "s20": null,
+   "s21": null
+  }
+ },
+ "console": [],
+ "hscroll": {
+  "narrow-390x844": {
+   "layout": "narrow",
+   "sw": 390,
+   "cw": 390,
+   "imgs": 0
+  },
+  "narrow-844x390": {
+   "layout": "narrow",
+   "sw": 844,
+   "cw": 844,
+   "imgs": 0
+  },
+  "narrow-1100x800": {
+   "layout": "narrow",
+   "sw": 1100,
+   "cw": 1100,
+   "imgs": 0
+  }
+ },
+ "keys": {
+  "start": [
+   "#s0",
+   "00:29:57",
+   "01 / 22"
+  ],
+  "down": [
+   "#s1",
+   "00:29:57",
+   "02 / 22"
+  ],
+  "end": [
+   "#s21",
+   "01:56:17",
+   "22 / 22"
+  ],
+  "home": [
+   "#s1",
+   "00:30:25"
+  ],
+  "tp_after_T": "off",
+  "tp_after_TT": "on",
+  "presenter": [
+   "on",
+   "none",
+   "none"
+  ],
+  "dot5": [
+   "#s5",
+   "5",
+   "5"
+  ],
+  "ras0": 0,
+  "ras_after_N": [
+   1,
+   "Rasamoa, exterior: the market quarter",
+   "01:30:11"
+  ],
+  "links_sample": [
+   [
+    "01:26:03",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=5163s"
+   ],
+   [
+    "Watch the VOD",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=1797s"
+   ],
+   [
+    "00:30:15",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=1815s"
+   ],
+   [
+    "00:36:50",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=2210s"
+   ],
+   [
+    "01:17:53",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=4673s"
+   ],
+   [
+    "01:24:15",
+    "https://www.youtube.com/watch?v=wZ0rwJWBLec&t=5055s"
+   ]
+  ],
+  "focus_ring": "",
+  "fonts": [
+   "Barlow Condensed",
+   "Noto Sans KR",
+   "Source Serif 4"
+  ]
+ },
+ "sync": {
+  "http": [
+   "#s2",
+   "#s2",
+   "03 / 22"
+  ],
+  "http_tp": [
+   "off",
+   "off"
+  ],
+  "file": [
+   "#s21",
+   "#s21",
+   "22 / 22"
+  ],
+  "file_storage": "{\"stage\":21,\"tp\":true,\"tpSeq\":0,\"rasamoa\":0,\"at\":1792176590302}",
+  "shim_vertical": [
+   "file:///C:/Users/PandaPanda/Projects/loa-on-air-2026-10-16/index.html?presenter=1&layout=vertical#s21",
+   [
+    "narrow",
+    "on"
+   ]
+  ]
+ },
+ "reduced": {
+  "tc_at_150ms": "00:38:27"
+ },
+ "tight_land": [],
+ "tight_vert": [],
+ "tight_vert_tp": []
+}

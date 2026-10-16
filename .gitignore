@@ -1,0 +1,9 @@
+# VOD section downloads and raw frame dumps (regenerate with scripts/grab-frames.ps1)
+clips/
+frames/
+# review screenshots (large PNGs)
+reviews/shots/
+# scratch
+scripts/_tmp-*
+scripts/grab-frames.log
+reviews/*.err
