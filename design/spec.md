@@ -165,7 +165,7 @@ Inline SVG, no library. Shared rules: `figcaption` first (Barlow Condensed 600 2
 | stage | figcaption | viewBox | rows (label → value, emphasised?) | scaleMax |
 |---|---|---|---|---|
 | S4 | "Mordum clear rate, before and after the nerf (after = as of the night before)" | `0 0 900 110` | "Before the nerf" → 3.47% (no); "After the nerf" → 33.09% (yes) | 40 |
-| S12 | "Nice-dan share of rosters, from his chart" | `0 0 900 200` | "Summer 2023" → 2.1%; "Summer 2024" → 6.0%; "Summer 2025" → 16.0%; "Summer 2026" → 17.8% (yes) | 20 |
+| S12 | "Same-class-roster share, from his chart" | `0 0 900 200` | "Summer 2023" → 2.1%; "Summer 2024" → 6.0%; "Summer 2025" → 16.0%; "Summer 2026" → 17.8% (yes) | 20 |
 | S15 | "Package-sourced gold, peak share of all gold produced" | `0 0 900 70` | one track 100% wide in `--bar` at 35% opacity; one fill 2.65% wide in `--gold` (yes); value "2.65%" placed at x = fill end + 12 | 100 |
 | S18 | "Dev headcount growth since the 2018-11-07 open beta" | `0 0 900 110` | "By mid-2021" → +15; "By December 2025" → +57 (yes) | 60 |
 
