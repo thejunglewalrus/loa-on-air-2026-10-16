@@ -10,6 +10,16 @@
     "alt": "Gold River seated at a white desk with a laptop, grey jacket over a white T-shirt, plain white backdrop."
   },
   {
+    "stage": "s1",
+    "file": "images/gr-s1.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:30:01",
+    "seconds": 1801,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
     "stage": "s2",
     "file": "images/dps-gap.jpg",
     "width": 1400,
@@ -18,6 +28,106 @@
     "seconds": 2210,
     "caption": "His slide: max–min DPS spread by raid gate",
     "alt": "Bar chart titled in Korean 'max-min DPS spread by raid gate'. Three tall orange bars for Act 3 gates 1 to 3, then shorter yellow bars for Act 4, green for Denouement and Serca, and the shortest blue bars for Belgardin. No axis numbers are shown."
+  },
+  {
+    "stage": "s3",
+    "file": "images/gr-s3.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:41:44",
+    "seconds": 2504,
+    "caption": "Gold River, close-up",
+    "alt": "Close-up of Gold River speaking, grey jacket over a white T-shirt, white backdrop."
+  },
+  {
+    "stage": "s4",
+    "file": "images/clear-rate.jpg",
+    "width": 1400,
+    "height": 784,
+    "timecode": "00:44:12",
+    "seconds": 2652,
+    "caption": "His slide: clear rate and average combat power of clearing players, before vs after the nerf",
+    "alt": "Two bar charts from his slide. Left, 'clear-rate change': 3.47% before the nerf, 33.09% after. Right, 'change in average combat power of clearing adventurers': 9,664 before the nerf, 9,121 after."
+  },
+  {
+    "stage": "s5",
+    "file": "images/gr-s5.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:45:07",
+    "seconds": 2707,
+    "caption": "Gold River, close-up",
+    "alt": "Close-up of Gold River speaking, grey jacket over a white T-shirt, white backdrop."
+  },
+  {
+    "stage": "s6",
+    "file": "images/gr-s6.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:48:26",
+    "seconds": 2906,
+    "caption": "Gold River, close-up",
+    "alt": "Close-up of Gold River speaking, grey jacket over a white T-shirt, white backdrop."
+  },
+  {
+    "stage": "s7",
+    "file": "images/gr-s7.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:50:34",
+    "seconds": 3034,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s8",
+    "file": "images/gr-s8.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:56:04",
+    "seconds": 3364,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s9",
+    "file": "images/gr-s9.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "00:59:52",
+    "seconds": 3592,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s10",
+    "file": "images/gr-s10.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "01:02:22",
+    "seconds": 3742,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s11",
+    "file": "images/gr-s11.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "01:05:29",
+    "seconds": 3929,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s13",
+    "file": "images/gr-s13.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "01:13:20",
+    "seconds": 4400,
+    "caption": "Gold River, close-up",
+    "alt": "Close-up of Gold River speaking, grey jacket over a white T-shirt, white backdrop."
   },
   {
     "stage": "s14",
@@ -88,5 +198,25 @@
     "seconds": 5447,
     "caption": "Rasamoa, interior: a lamplit chamber",
     "alt": "Screenshot of a warm lamplit interior chamber with a central mechanism and an upper gallery."
+  },
+  {
+    "stage": "s17",
+    "file": "images/gr-s17.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "01:31:40",
+    "seconds": 5500,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
+  },
+  {
+    "stage": "s19",
+    "file": "images/gr-s19.jpg",
+    "width": 1920,
+    "height": 1080,
+    "timecode": "01:53:41",
+    "seconds": 6821,
+    "caption": "Gold River at the desk",
+    "alt": "Gold River seated at a white desk with a laptop, mid-sentence, plain white backdrop."
   }
 ]

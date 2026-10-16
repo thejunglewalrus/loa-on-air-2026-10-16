@@ -1,0 +1,19 @@
+- **S1:** “Is a former director fronting comms a fix or a symptom?” → “Is a former director handling comms a fix or a symptom?”
+- **S2:** “The dev staff knew the disparity existed; this was not a surprise.” → “The devs knew about the disparity; it was no surprise.”
+- **S3:** “Then the dilemma: nerf and you wound the players who already cleared; leave it and you abandon the intent.” → “Then the dilemma: a nerf hurts players who already cleared; leaving it defeats the purpose.”
+- **S4:** “Better to admit the start was a failure, learn, and ship the next content well.” → “Better to admit the failed start, learn, and get the next content right.”
+- **S5:** “He would have liked it lower overall.” → “He would have preferred it easier.”
+- **S6:** “The build freedom it promised is not really happening.” → “It has not delivered the promised build freedom.”
+- **S7:** “Lower support dependence, or raise the support floor. Which one do you want?” → “Which one: lower support dependence or a higher support floor?”
+- **S8:** “Dev raid craft has improved: more DPS windows, far less of the old unpleasantness.” → “Raid design has improved: more DPS windows, far fewer frustrations.”
+- **S9:** “There is a lot in preparation.” → “A lot is in the works.”
+- **S10:** “What is the one question you want the devs to answer live?” → “What one question do you want the devs to answer live?”
+- **S11:** “Leadership: changes may come.” → “Leadership may change.”
+- **S12:** “Season 3's new systems demanded gold, early prices were high, and the burden never came down.” → “Season 3's new systems demanded gold, early prices were high, and the burden never eased.”
+- **S13:** “Not a play they want to encourage.” → “They do not want to encourage it.”
+- **S14:** “In his view the gold problem is not complex.” → “He sees the gold problem as simple.”
+- **S15:** “Gold already stacked up has to be drained, but cutting rewards on content that just shipped is frightening too.” → “Accumulated gold has to be drained, but cutting rewards on newly released content feels daunting too.”
+- **S16:** “Rasamoa is the only major city of the Sea of Aldebaran and, by the setting, the last and largest.” → “Rasamoa is the Sea of Aldebaran's only major city and, in the lore, the last and largest.”
+- **S17:** “What should the six-character limit become: lifted, raised, or replaced by something else?” → “Should the six-character limit be lifted, raised or replaced?”
+- **S18:** “QA team exists and is sizeable.” → “The QA team is sizeable.”
+- **S19:** “Denouement is the next anxiety.” → “Denouement is the next worry.”
