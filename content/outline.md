@@ -6,7 +6,7 @@ Speaker: **Gold River (금강선)**, former Lost Ark director, on camera at dire
 
 **The builder copies this text verbatim. It does not rewrite, shorten, or "improve" it.** Every bullet carries the transcript timestamp it came from. Each stage's timecode (the first timestamp in its heading) links to `https://www.youtube.com/watch?v=wZ0rwJWBLec&t=<seconds>s`; `[hh:mm:ss]` markers inside bullets are NOT rendered.
 
-Name rules: "Gold River (금강선)" on the title stage (its standfirst is the first mention), "Gold River" everywhere after. Never "Geum Kang-sun". Official Western names (verified against the game's English string table, `reviews/triage.md` "Name resolutions"): Mordum, Armoche, Serca, Belgardin, Narok, Brelshaza, Denouement (종막, the final act of the Kazeros Raid), Ark Grid, Sea of Aldebaran, Rasamoa, Sergaton.
+Name rules: "Gold River (금강선)" on the title stage (its standfirst is the first mention), "Gold River" everywhere after. Never "Geum Kang-sun". Official Western names (verified against the game's English string table, `reviews/triage.md` "Name resolutions"): Mordum, Armoche, Serca, Belgardin, Narok, Brelshaza, Kazeros Extreme (종막, the final act of the Kazeros Raid; the client calls it Denouement, the community Kazeros Extreme), Ark Grid, Sea of Aldebaran, Rasamoa, Sergaton.
 
 Stage order follows the VOD, so the timecode spine only ever rolls forward (22 stages, S0–S21). Cards are capped at about 150 words so every stage fits one 1920x1080 viewport and one 1080x1920 viewport without scrolling; longer topics are split across two stages that share a title with "(1)" and "(2)".
 
@@ -19,7 +19,7 @@ Frame files are listed in `images/manifest.json`; a stage with a `Frame:` line s
 Title: **Gold River returns**
 Subtitle: **The Mordum emergency broadcast**
 Kicker: `[Live] 로스트아크 On Air  ·  2026-10-16 19:00 KST  ·  Watch the VOD` (the last item is the link).
-Standfirst: "A summary of what Gold River (금강선) said, not a transcript. Each stage gathers related remarks; its VOD timecode is where that topic starts, and every timecode link opens the VOD there. The boxed talking points are ours, not his."
+Standfirst: "A summary of what Gold River (금강선) said, not a transcript. Each stage gathers related remarks; its VOD timecode is where that topic starts, and every timecode link opens the VOD there."
 Keys hint (small, bottom of the card): "↓ next   ↑ previous   T talking points   P presenter mode"
 Frame: hero (Gold River at the desk, 00:30:15).
 
@@ -40,9 +40,9 @@ Talking points
 Frame: dps (his chart titled 레이드 관문별 DPS 최대–최소 편차, "max–min DPS spread by raid gate", 00:36:50).
 
 - Questions he received: why release Mordum like this, what "drawing a line" meant, and whether the devs knew about the class disparity. [00:34:36 – 00:35:04]
-- Purpose: an Extreme release to fill the off-season between Act 3 and Denouement. [00:36:00 – 00:36:11]
+- Purpose: an Extreme release to fill the off-season between Act 3 and Kazeros Extreme. [00:36:00 – 00:36:11]
 - Mordum is a fixed-pattern fight (scripted, repeatable boss patterns) where some classes deal damage far more easily. The devs knew about the disparity; it was no surprise. [00:36:13 – 00:36:38]
-- The chart: the DPS gap between classes spiked at Act 3 (he cites "over 20%" and promises exact figures next time), then narrowed through Act 4, Denouement, Serca and Belgardin. Belgardin is the closest to what the devs intended. [00:36:47 – 00:38:19]
+- The chart: the DPS gap between classes spiked at Act 3 (he cites "over 20%" and promises exact figures next time), then narrowed through Act 4, Kazeros Extreme, Serca and Belgardin. Belgardin is the closest to what the devs intended. [00:36:47 – 00:38:19]
 
 Talking points
 - The devs knew about the disparity but released it. Worse than not knowing, or more honest?
@@ -53,11 +53,11 @@ Talking points
 - A Mordum-only balance fix felt like a cheap patch, so they kept the difficulty the director had announced. [00:38:27 – 00:38:47]
 - The director meant to "draw a line" at one level; it ended up higher. The disparity meant some classes could not clear at all. "Wrong from the first button." [00:38:49 – 00:39:21]
 - Then the dilemma: a nerf hurts players who already cleared; leaving it defeats the purpose. The window for a quick fix closed before the late nerf. [00:39:29 – 00:40:31]
-- Denouement is next week's concern: it should be harder than Mordum, yet any tuning now draws criticism. "The first button was buttoned wrong." [00:41:07 – 00:41:53]
+- Kazeros Extreme is next week's concern: it should be harder than Mordum, yet any tuning now draws criticism. "The first button was buttoned wrong." [00:41:07 – 00:41:53]
 
 Talking points
 - A line drawn too high, then a late nerf: which mistake cost more?
-- If you were tuning Denouement this week, where would you put it?
+- If you were tuning Kazeros Extreme this week, where would you put it?
 
 ## S4 — Mordum: the decisions (00:42:50)
 
@@ -76,11 +76,11 @@ Talking points
 
 - "Drawing a line" was the wrong wording. Everyone assumes the line falls behind them. The purpose and exact difficulty target should have been stated plainly. [00:45:03 – 00:46:25]
 - Apology for the loss players felt over Mordum. [00:46:28, 00:48:04 – 00:48:17]
-- Denouement: similar to or slightly harder than Mordum. Its structure should reduce disparity. First-wave veterans may clear it faster. He would have preferred it easier. [00:47:20 – 00:48:04]
+- Kazeros Extreme: similar to or slightly harder than Mordum. Its structure should reduce disparity. First-wave veterans may clear it faster. He would have preferred it easier. [00:47:20 – 00:48:04]
 
 Talking points
 - "Everyone assumes the line falls behind them." Did you?
-- Denouement "slightly above Mordum": relief or dread?
+- Kazeros Extreme "slightly above Mordum": relief or dread?
 
 ## S6 — Balance and Ark Grid (00:48:19)
 
@@ -94,9 +94,9 @@ Talking points
 
 ## S7 — Synergy, supports, a safety net (00:50:30)
 
-- Synergy needs sorting out. Crit overcap (과치적: crit rate past 100% going to waste) needs a quick fix; it is already under review. "I won't make you wait long." [00:50:30 – 00:52:19]
-- Supports: pick a direction first. Reduce raids' dependence on supports or, if raids keep this design, raise the support floor (easier buff and brand upkeep). Support fatigue and dependence are high; an adjustment is likely. [00:52:26 – 00:54:26]
-- If balance cannot be fixed, consider a system-level safety net for disadvantaged classes. Explicitly **not** class-change tickets; something adjustable at the roster level. [00:54:37 – 00:55:55]
+- Synergy (the party buffs each class brings) needs sorting out. First target: crit overcap (과치적: crit rate pushed past 100%, so part of the crit synergy is wasted); it is already under review. "I won't make you wait long." [00:50:30 – 00:52:19]
+- Supports (Bard, Paladin, Artist): pick a direction first. Either make raids depend less on supports or, if raids keep this design, make supports easier to play well (easier upkeep of the attack buff and brand). Support fatigue and dependence are high; an adjustment is likely. [00:52:26 – 00:54:26]
+- If class balance cannot be fixed, consider a system-level safety net for the classes that fall behind. Explicitly **not** class-change tickets; something you adjust at the roster level. [00:54:37 – 00:55:55]
 
 Talking points
 - A roster-level safety net for weak classes: clever, or an admission balance is unfixable?
@@ -105,7 +105,7 @@ Talking points
 ## S8 — Raid direction (1) (00:56:00)
 
 - Chat sentiment he read back: "the raids themselves are fun", "fun right up to Bel" (Belgardin), "fatigue is too high". [00:56:17 – 00:56:38]
-- "Honest opinion": maybe Mordum Extreme should not have been released at all, only Denouement. Releasing it may itself have been the problem. [00:56:41 – 00:57:10]
+- "Honest opinion": maybe Mordum Extreme should not have been released at all, only Kazeros Extreme. Releasing it may itself have been the problem. [00:56:41 – 00:57:10]
 - Raid design has improved: more DPS windows, far fewer frustrations. [00:57:20 – 00:58:16]
 - The data showed many mid-tier players left at Act 2 (Narok and Brelshaza, both gates too hard). [00:58:29 – 00:59:14]
 
@@ -115,7 +115,7 @@ Talking points
 
 ## S9 — Raid direction (2) (00:59:45)
 
-- Mordum- and Armoche-style challenge raids remain worth pursuing, with viable Ark Grid setups prepared alongside, not raids and systems built separately. [00:59:45 – 01:01:04]
+- He still wants challenge raids like Mordum and Armoche. But a raid like that should ship with Ark Grid builds that actually work in it; this time the raid and the systems were built separately and did not fit together. [00:59:45 – 01:01:04]
 - Rehashed content is a problem, he says, and winter will not be a rehash. A lot is in the works. [01:01:04 – 01:01:26]
 - Legion-style raids continue: more DPS time, fewer clone mechanics (the boss copying itself), experiments with fixed-pattern and scrolling-stage fights, frustrations removed. [01:01:29 – 01:02:12]
 
@@ -232,7 +232,7 @@ Talking points
 ## S19 — Closing (01:53:37)
 
 - All dev leads next time. Broadcasts continue through LOA ON Winter, good news or bad; "not just when it's good". [01:53:55 – 01:55:26]
-- Denouement is the next worry. [01:54:52 – 01:55:02]
+- Kazeros Extreme is the next worry. [01:54:52 – 01:55:02]
 - He ends with the Rasamoa BGM; he had little else he had authority to share. [01:56:17 – 01:56:49]
 
 Talking points
@@ -243,12 +243,12 @@ Talking points
 
 | KR | Romanised | Gloss |
 |---|---|---|
-| 나이스단 | nice-dan | Slang for a roster of several copies of one class |
+| 나이스단 | nice-dan | A mono-class or same-class roster: several copies of one class, whether six of one or three pairs |
 | 로이겐 | ROIGEN | "로아 이대로 괜찮은가": "Is Lost Ark OK as it is?", the planned broadcast |
 | 육회제한 | yukhoe-jehan | The six-character weekly gold limit |
 | 선 긋기 | seon geutgi | "Drawing a line": the director's phrase for a difficulty floor |
 | 과치적 | gwachijeok | Crit overcap: crit rate above 100% that goes to waste |
-| 종막 | Denouement | The final act of the Kazeros Raid; next week |
+| 종막 | Kazeros Extreme | The final act of the Kazeros Raid, due next week; the client's own name for it is Denouement |
 
 ## S21 — Glossary (2) (timecode shows 01:56:50)
 
