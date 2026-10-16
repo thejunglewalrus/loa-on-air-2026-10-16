@@ -526,12 +526,15 @@
         '<button type="button" class="ctl__btn" data-op="rasPrev">Rasamoa &#8249;</button>' +
         '<button type="button" class="ctl__btn" data-op="rasNext">Rasamoa &#8250;</button>' +
       '</div>' +
+      '<div class="ctl__body">' +
+      '<article class="ctl__prompt" id="ctl-prompt" aria-live="polite"></article>' +
       '<ol class="ctl__list" id="ctl-list">' +
         titles.map(function (t, i) {
           return '<li><button type="button" class="ctl__stage" data-stage="' + i + '"><span class="ctl__num">' + pad(i + 1) + '</span>' + t.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</button></li>';
         }).join("") +
       '</ol>' +
-      '<p class="ctl__hint">Keys here: arrows, Home, End, T, N, B. The OBS sources follow.</p>';
+      '</div>' +
+      '<p class="ctl__hint">Keys here: arrows, Home, End, T, N, B. The OBS sources follow. Float this dock onto another monitor and enlarge it for bigger text.</p>';
     document.body.appendChild(panel);
 
     function ctlRender() {
@@ -541,6 +544,14 @@
       var tc = document.getElementById("ctl-tc");
       tc.textContent = s.getAttribute("data-tc");
       tc.setAttribute("href", VOD + sec + "s");
+      /* prompter: the stage's card (title, bullets, stat tile or glossary) and its talking points */
+      var card = s.querySelector(".card");
+      var tp = s.querySelector(".tp");
+      var html = card ? card.innerHTML : "";
+      html = html.replace(/<p class="title__keys">[\s\S]*?<\/p>/, "");
+      if (tp) html += '<aside class="ctl__tp">' + tp.innerHTML + "</aside>";
+      if (ctl.stage === rasStage && rasImgs.length) html += '<p class="ctl__ras">Rasamoa image ' + (ctl.rasamoa + 1) + " / " + rasImgs.length + ": " + (rasImgs[ctl.rasamoa].getAttribute("data-caption") || "") + "</p>";
+      document.getElementById("ctl-prompt").innerHTML = html;
       var tpBtnC = document.getElementById("ctl-tp");
       tpBtnC.setAttribute("aria-pressed", ctl.tp ? "true" : "false");
       tpBtnC.classList.toggle("is-on", ctl.tp);
